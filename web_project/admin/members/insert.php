@@ -85,34 +85,33 @@ $sql .= "'$gender', '$reg_date');";
 
 // echo $sql;
 
-//데이터베이스에 쿼리 전송
+// 데이터베이스에 쿼리 전송
 // mysqli_query("DB 연결객체", "전송할 쿼리");
-mysqli_query("dbcon", $sql); // 저장할 때마다 데이터 쌓임
+mysqli_query($dbcon, $sql);
+
 
 // DB 접속 종료
+// mysqli_close("연결객체");
 mysqli_close($dbcon);
 
-<!-- // 리디렉션 -->
+// 리디렉션
 echo "
-    <script type= \"text/javascript\">
-    // location.href= \"이동할 페이지 주소\"
-    location.href= \"welcome.php\";
-</script>
-";
-
-echo `
-<script type="text/javascript">
-    //location.href="이동할 페이지 주소";
-    location.href = "welcome.php";
+    <script type=\"text/javascript\">
+        // location.href = \"이동할 페이지 주소\";
+        location.href = \"welcome.php\";
     </script>
-    `;
+    ";
 
+/* echo `
+    <script type="text/javascript">
+        // location.href = "이동할 페이지 주소";
+        location.href = "welcome.php";
+    </script>
+    `; */
 ?>
 
-
-<!-- 리디렉션 : 다른 페이지로 이동-->
+<!-- 리디렉션 -->
 <!-- <script type="text/javascript">
-    // location.replace()  // 페이지를 아예 바꿈. 페이지 이동 아님 
-    // location.href="이동할 페이지 주소";
-    location.href="welcome.php";
+    // location.href = "이동할 페이지 주소";
+    location.href = "welcome.php";
 </script> -->

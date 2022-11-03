@@ -113,10 +113,10 @@
 
         function id_search(){
             // window.open("팝업될 문서 경로", "팝업 되었을 때의 이름", "옵션");
-            window.open("id_search.html", "", "width=600,height=300,left=0,top=0");
+            window.open("id_search.php", "idsch", "width=600,height=300,left=0,top=0");
         };
         function addr_search(){
-            window.open("addr_search.html", "", "width=600,height=300,left=0,top=0");
+            window.open("addr_search.php", "", "width=600,height=300,left=0,top=0");
         };
 
     </script>
