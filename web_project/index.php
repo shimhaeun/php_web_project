@@ -19,7 +19,7 @@
         <!-- 로그인 전 -->
         <a href="login/login.php">로그인</a>
         <a href="members/join.php">회원가입</a>
-        <?php  else if($s_id == "admin"){ ?>
+        <?php } else if($s_id == "admin"){ ?>
         <!-- 관리자 로그인 -->
         <span class="pnt_name"><?php echo $s_name; ?>님, 안녕하세요. </span>
         <a href="admin/index.php">[관리자 페이지]</a>

@@ -1,11 +1,11 @@
 <?php
-include "../inc/session.php"
+include "../inc/session.php";
 
 if($s_id != "admin"){
     echo "
         <script tyype=\"text/javascript\">
             alert(\"관리자 로그인이 필요합니다.\");
-            location.href = \"http://localhost/web_project/admin/login/login.php\";
+            location.href = \"http://shy624.dothome.co.kr/htdocs/web_project/login/login.php\";
         </script>
     ";
     exit;
@@ -19,7 +19,7 @@ if($s_id != "admin"){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>관리자 페이지</title>
     <style>
-        body {font-size:20px}
+        body{font-size:20px};
         a{text-decoration:none; margin: 0 5px};
 </style>
 </head>
