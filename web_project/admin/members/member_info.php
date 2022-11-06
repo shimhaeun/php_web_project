@@ -1,3 +1,21 @@
+<?php
+include "../inc/session.php";
+
+// 관리자가 선택한 사용자의 데이터 가져오기
+$g_idx = $_GET["g_idx"];
+
+// 로그인한 사용자만 접근
+include "../inc/login_check";
+
+// DB 연결
+include "../inc/dbcon.php";
+
+$sql = "select * from members where idx=$g_idx";
+
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="ko">
 <head>

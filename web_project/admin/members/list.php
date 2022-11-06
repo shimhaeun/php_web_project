@@ -14,6 +14,42 @@ $result = mysql_query($dbcon, $sql);
 // 전체 데이터 가져오기
 $total = mysqli_num_rows($result);
 
+// paging : 한 페이지 당 보여질 목록 수
+$list_num = 5;
+
+// paging : 한 블럭 당 페이지 수
+$page_num = 3;
+
+// paging : 현재 페이지
+$page = isset($page) ? $page : 1;
+
+// paging : 전체 페이지 수 = 전체 데이터 / 페이지 당 목록 수, ceil : 올림값, floor: 내림값, round : 반올림
+$total_page = ceil($total / $list_num);
+// echo $total_page;
+// exit;
+
+//paging : 전체 블럭 수 = 전체 페이지 수 / 블럭 당 페이지 수
+$total_block = ceil($page / $page_num);
+
+// paging : 현재 블럭 번호 = 현재 페이지 번호 / 블럭 당 페이지 수
+$now_block = ceil($page/$page_num);
+
+// paging : 블럭 당 시작 페이지 번호 = (해당 글의 블럭 번호-1) * 블럭 당 페이지 수 + 1;
+$s_pageNum : ($now_block - 1)*($page_num)+1;
+if($s_pageNum <=0){
+    $s_pageNum = 1;
+};
+
+// paging : 블럭 당 마지막 페이지 번호 = 현재 블럭 번호 * 블럭 당 페이지 수
+$e_pageNum = $now_block * $page_num;
+// 블럭 당 마지막 페이지 번호가 전체 페이지 수 넘지 않도록
+if($e_pageNum <= $total_page){
+    $e_pageNum = $total_page;
+}
+
+
+
+
 ?>
 <!DOCTYPE html>
 <html lang="ko">
@@ -55,6 +91,14 @@ $total = mysqli_num_rows($result);
         .reg_date{width:120px}
         .modify{width:160px}
     </style>
+    <script>
+    function mem_del(g_no) {
+        var rtn_val = confirm("정말 삭제하시겠습니까?");
+        if(rtn_val == true){
+            location.href = "member_delete.php?g_idx" + g_no;
+        };
+    };
+    </script>
 </head>
 <body>
     <?php include "../inc/sub_header.html"; ?>
@@ -93,8 +137,8 @@ $total = mysqli_num_rows($result);
         <td><?php echo $array["gender"]; ?></td>
         <td><?php echo $array["reg_date"]; ?></td>
         <td>
-            <a href="#">[수정]</a>
-            <a href="#">[삭제]</a>
+            <a href="member_info.php?g_idx"<?php echo $array["idx"];?>>[수정]</a>
+            <a href="#" onclick="mem_del(<?php $array['idx'];?>">[삭제]</a>
         </td>
         </tr>
         <?php
