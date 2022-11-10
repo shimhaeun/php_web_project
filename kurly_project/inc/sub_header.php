@@ -5,8 +5,8 @@
         <ul>
             <?php if(!$_idx){ ?>
                 <!-- 로그인 전 -->
-            <li><a href="../members/join.php" class="purple">회원가입</a></li>
-            <li><a href="../login/login.php">로그인</a></li>
+            <li><a href="members/join.php" class="purple">회원가입</a></li>
+            <li><a href="login/login.php">로그인</a></li>
             <li class="site-name"><a href="#"></a></li>
             <?php } else if($s_id == "admin"){ ?>
                 <!-- 관리자 로그인 -->

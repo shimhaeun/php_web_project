@@ -1,4 +1,4 @@
-   <?php
+<?php
 session_start();
 
 // 세션 삭제
@@ -9,8 +9,8 @@ unset($_SESSION["s_id"]);
 
 // 페이지 이동
 echo "
-   <script type=\"text/javascript\">
+    <script type=\"text/javascript\">
         location.href=\"../index.php\";
-   </script>
+    </script>
 ";
 ?>

@@ -1,6 +1,6 @@
 <?php 
 include "../inc/session.php"; 
-include "../inc/login_check.php";
+include "../inc/admin_check.php";
 ?>
 <!DOCTYPE html>
 <html lang="ko">

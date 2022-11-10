@@ -6,7 +6,6 @@ if(!$s_idx || $s_id!="admin"){
             location.href = \"http://localhost/web_project/admin/login/login.php\";
         </script>
     ";
-    exit;   
+    exit;
 };
-    
 ?>

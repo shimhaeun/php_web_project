@@ -74,12 +74,14 @@
             <button class="btn_type1" type="submit" onclick="">
               <span class="txt_type">로그인</span>
             </button>
+            <br>
+            <button class="btn_type2" type="submit" onclick="">
+                <span class="txt_type">회원가입</span>
+            </button>
           </fieldset>
         </form>
         
         <!-- <button type="button" class="btn_type2 btn_member" onclick="history.back();">돌아가기</button> -->
-        <button class="btn_type2" type="submit" onclick="">
-            <span class="txt_type">회원가입</span>
             </a>
         </div>
       </div>
