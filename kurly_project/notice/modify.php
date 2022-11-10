@@ -33,7 +33,7 @@ include "../inc/session.php";
     </script>
 </head>
 <body>
-    <?php include "../inc/sub_header.html"; ?>
+    <?php include "../inc/sub_header.php"; ?>
     <form name="notice_form" action="insert.php" method="post" onsubmit="return notice_check()">
         <fieldset>
             <legend>공지사항</legend>

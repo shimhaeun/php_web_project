@@ -22,7 +22,7 @@
 <!-- jQuery -->
 <!-- <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script> -->
 <!-- Multi level Menu CSS -->
-<link rel="stylesheet" href="/css/dropdown.css">
+<link rel="stylesheet" href="css/dropdown.css">
 <!-- Multi level Menu Js -->
 <script src="/js/dropdown.js"></script>
 <header>

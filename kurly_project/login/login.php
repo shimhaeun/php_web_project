@@ -45,7 +45,7 @@
         };
 </script>
 <header>
-	<?php include "../inc/sub_header.html" ?>
+	<?php include "../inc/sub_header.php" ?>
 </head>
 <body>
 <!-- 로그인 -->

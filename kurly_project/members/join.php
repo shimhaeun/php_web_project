@@ -1,5 +1,5 @@
 <?php
-include "../inc/sub_header.html"
+include "../inc/sub_header.php"
 
 ?>
 

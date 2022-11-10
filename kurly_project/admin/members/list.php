@@ -86,7 +86,7 @@ if($e_pageNum > $total_page){
     </style>
 </head>
 <body>
-    <?php include "../inc/sub_header.html"; ?>
+    <?php include "../inc/sub_header.php"; ?>
     <!-- 콘텐트 -->
     <h2>공지사항</h2>
     <p>전체 <?php echo $total; ?>개</p>

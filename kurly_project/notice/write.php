@@ -1,6 +1,6 @@
 <?php 
 include "../inc/session.php"; 
-// include "../inc/admin_check.php";
+include "../inc/admin_check.php";
 ?>
 <!DOCTYPE html>
 <html lang="ko">
@@ -12,6 +12,7 @@ include "../inc/session.php";
     <style>
         body,input,button,textarea{font-size:20px}
         input[type=checkbox]{width:20px;height:20px}
+        a{text-decoration:none;margin:0 5px}
     </style>
     <script>
         function notice_check(){
@@ -33,6 +34,7 @@ include "../inc/session.php";
     </script>
 </head>
 <body>
+    <?php include "../inc/sub_header.html"; ?>
     <form name="notice_form" action="insert.php" method="post" onsubmit="return notice_check()">
         <fieldset>
             <legend>공지사항</legend>
