@@ -34,10 +34,10 @@
 </div>
 <div id="headerLogo">
     <div class="logo">
-        <a href="#top"><img src="../img/logo.jpg"></a>
+        <a href="#top"><img src="img/logo.jpg"></a>
         <div class="logogroup">
             <div class="mkklogo" style="cursor: pointer;">
-                <a href="../index.php" style="color: white;">
+                <a href="http://localhost/kurly_project" style="color: white;">
                     마켓컬리
                 </a>
             </div>
@@ -49,8 +49,8 @@
 </div>
 
 <div class="search">
-<input type="text" placeholder="빵빵한 라인업 온라인 빵지순례!"><a href="#"><img src="../img/search_icon.png" class="sch"></a></input>
-<img src="../img/heart.png" class="deli" style="cursor: pointer;"><img src="../img/cart_icon.png" class="cart" style="cursor: pointer;">
+<input type="text" placeholder="빵빵한 라인업 온라인 빵지순례!"><a href="#"><img src="img/search_icon.png" class="sch"></a></input>
+<img src="img/heart.png" class="deli" style="cursor: pointer;"><img src="img/cart_icon.png" class="cart" style="cursor: pointer;">
 </div>
 <!-- <div id="gnbMenu-cover"> -->
 <!-- <div id="gnbMenu"> -->

@@ -1,4 +1,8 @@
-<?php
+v<?php
+
+error_reporting(E_ALL);
+
+ini_set('display_errors', '1');
 // 세션 시작
 session_start();
 
@@ -12,7 +16,7 @@ include "../inc/dbcon.php";
 
 // 쿼리 작성
 // select u_id, pwd from members where u_id='$u_id';
-$sql = "select idx, u_name, u_id, pwd from mebmbers where u_id='$u_id';";
+$sql = "select idx, u_name, u_id, pwd from members where u_id='$u_id';";
 // echo $sql;
 
 // 쿼리 전송

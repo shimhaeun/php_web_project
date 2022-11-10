@@ -1,3 +1,6 @@
+<?php
+include "../inc/sub_header.html";
+?>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
