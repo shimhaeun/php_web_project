@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" conten과="width=device-width, initial-scale=1.0">
+    <title>검색 결과</title>
+    <style type="text/css">
+        body{font-size: 20px;}
+        a{text-decoration: none;color: gray;}
+        a:hover{color: blue;}
+    </style>
+    <script type="text/javascript">
+        function return_addr(psCode, addr){
+            opener.document.getElementById("postalCode").value = psCode;
+            opener.document.getElementById("addr1").value = addr;
+            window.close()
+        }
+    </script>
+</head>
+<body>
+    <p>"역삼동" 검색 결과</p>
+    <p>
+        <a href="#" onclick="return_addr('06253','서울 강남구 강남대로 298 (푸르덴셜타워)')">
+            06253 서울 강남구 강남대로 298 (푸르덴셜타워)
+        </a>
+    </p>
+    <p>
+        <a href="#" onclick="return_addr('12345','서울 강남구 강남대로 302 (동희빌딩)')">
+            12345 서울 강남구 강남대로 302 (동희빌딩)
+        </a>
+    </p>
+    <p>
+        <a href="#" onclick="return_addr('67890','서울 강남구 강남대로 302-2')">
+            67890 서울 강남구 강남대로 302-2
+        </a>
+    </p>
+    
+</body>
+</html>

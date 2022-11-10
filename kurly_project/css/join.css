@@ -1,0 +1,163 @@
+body {
+    width: 1050px;
+    height: 800px;
+    display: block;
+    
+}
+.join {
+    width: 640px;
+    height: 1300px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+header {
+    width: 170px;
+    height: 90px;
+    background: url(/img/joinlogo.png) no-repeat;
+    text-indent: -9999px;
+    margin:auto;
+    display: flex;
+    align-items: center;
+}
+
+.info {
+    width: 1050px;
+    height: 800px;
+    border: none;
+    display:contents;
+    margin: 0 auto;
+    /* padding: 20px 450px; */
+    /* position: relative */
+}
+.content {
+    width: 1050px;
+    height: 500px;
+    position:relative;
+    /* margin: 100px auto 100px; */
+    margin: auto;
+
+}
+label {
+    /* margin: 50px 200px 200px auto; */
+    margin: auto;
+    width: 300px;
+    height: 50px;
+    
+    justify-content: center;
+    
+}
+input[type="text"] {
+    width: 300px;
+    height: 45px;
+    border: 2px solid green;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+input:not([type="radio"]):not([type="checkbox"]) {
+width: 300px;
+height: 45px;
+border: 2px solid green;
+border-radius: 10px;
+margin: 0 ;
+}
+
+button {
+    width: 60px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    left: 500px;
+    margin: 0px 120px; 
+    background-color: green;
+    color: white;
+    border: none green;
+    border-radius: 10px;
+    width: 200px;
+    height: 50px;
+    float: right;
+    justify-content: center;
+}
+/* input[type="button"] {
+    width: 50px;
+    
+
+} */
+
+.birth{
+
+}
+.addinfo{
+    position: relative;
+    bottom: 0;
+    /* display: flex;
+    align-items: center; */
+}
+.info {
+    float: left;
+}
+.id {
+    position: relative;
+    /* display: flex;
+    align-items: center; */
+}
+form {
+    margin: auto;
+    width: 1050px;
+    height: 1000px;
+}
+.btn-sign {
+    width: 200px;
+    height: 50px;
+    border-radius: 3px;
+    margin: 0 auto;
+}
+.agree {
+    top:500px;
+    width: 1050px;
+    height: 400px;
+    padding: 50px 100px;
+    text-align: left;
+    
+}
+.button_group {
+    width: 500px;
+    height: 100px;
+    left: 500px;
+    margin: auto;
+    /* position: absolute; */
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+/* align-items: centers; */
+/* .btn-sign .btn-return */
+.btn-sign {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    /* margin-top: 50px; */
+    background-color: green;
+    color: white;
+    border: none green;
+    border-radius: 10px;
+    width: 200px;
+    height: 50px;
+    float: left;
+    justify-content: center;
+}
+.btn-return {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    /* margin-top: 50px; */
+    background-color: green;
+    color: white;
+    border: none green;
+    border-radius: 10px;
+    width: 200px;
+    height: 50px;
+    justify-content: center;
+}
