@@ -3,9 +3,9 @@
         <!-- <div class="delivery"><img src="img/delivery_190819.webp"></div> -->
     <div class="gnb1">
         <ul>
-            <?php if(!$_idx){ ?>
+            <?php if(!$s_idx){ ?>
                 <!-- 로그인 전 -->
-            <li><a href="members/join.php" class="purple">회원가입</a></li>
+            <li><a href="../members/join.php" class="purple">회원가입</a></li>
             <li><a href="login/login.php">로그인</a></li>
             <li class="site-name"><a href="#"></a></li>
             <?php } else if($s_id == "admin"){ ?>
@@ -22,7 +22,7 @@
             <ul id="nav">
             <li class="yahoo"><a href="#">고객센터</a>
                 <ul>
-                    <li><a href="../notice/list.php">공지사항</a></li>
+                    <li><a href="/notice/list.php">공지사항</a></li>
                     <li><a href="#">자주하는질문</a></li>
                     <li><a href="#">1:1 문의</a></li>
                     <li><a href="#">대량주문 문의</a></li>

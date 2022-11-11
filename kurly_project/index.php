@@ -10,7 +10,7 @@
 </head> 
 <body>
 <script type="text/javascript" src="/js/jquery-3.6.1.min.js"></script>
-<link rel="stylesheet" href="../css/jquery.bxslider.css">
+<link rel="stylesheet" href="css/jquery.bxslider.css">
 <script src="http://code.jquery.com/jquery-1.9.0.js" type="text/javascript"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script type="text/javascript" src="js/jquery.flexnav.min.js"></script>
@@ -18,7 +18,7 @@
 <script type="text/javascript" src="js/jquery.flexnav.min.js"></script>
 <script type="text/javascript" src="//use.typekit.net/qyb8ood.js"></script>
 <script src="/js/timer.js"></script>
-<script src="../js/bxslider.js"></script>
+<script src="/js/bxslider.js"></script>
 <!-- jQuery -->
 <!-- <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script> -->
 <!-- Multi level Menu CSS -->
