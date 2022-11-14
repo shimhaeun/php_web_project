@@ -54,6 +54,8 @@ if($e_pageNum > $total_page){
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>공지사항</title>
+    <link rel="stylesheet" type="text/css" href="../css/dropdown.css">
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
     <style>
         body{font-size:20px}
         a{text-decoration:none;margin:0 5px}
