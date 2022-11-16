@@ -14,7 +14,7 @@ include "../inc/dbcon.php";
 // 쿼리 작성
 // delete from 테이블명 where 필드명='값';
 
-$sql = "delete from members where idx=$idx;"
+$sql = "delete from members where idx=$s_idx;"
 
 // 쿼리 전송
 mysqli_query($dbcon, $sql);

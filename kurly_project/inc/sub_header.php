@@ -18,7 +18,7 @@
             <li><a href="members/join.php" class="purple">회원가입</a></li>
             <li><a href="login/login.php">로그인</a></li>
             <li class="site-name"><a href="#"></a></li>
-            <?php } else if($s_id == "admin"){ ?>
+            <?php } else if($s_id == "admin" ){ ?>
                 <!-- 관리자 로그인 -->
                 <a href="admin/index.php">관리자 페이지</a>
                 <a href="../login/logout.php">로그아웃</a>

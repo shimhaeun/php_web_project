@@ -1,6 +1,6 @@
 <?php 
 include "../inc/session.php"; 
-include "../inc/admin_check.php";
+// include "../inc/admin_check.php";
 ?>
 <!DOCTYPE html>
 <html lang="ko">
@@ -9,6 +9,9 @@ include "../inc/admin_check.php";
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>공지사항</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/dropdown.css">
+    <link rel="stylesheet" href="../css/notice.css">
     <style>
         body,input,button,textarea{font-size:20px}
         input[type=checkbox]{width:20px;height:20px}
@@ -35,7 +38,7 @@ include "../inc/admin_check.php";
     </script>
 </head>
 <body>
-    <?php include "../inc/sub_header.html"; ?>
+    <?php include "../inc/sub_header.php"; ?>
     <form name="notice_form" action="insert.php" method="post" enctype="multipart/form-data" onsubmit="return notice_check()">
         <fieldset>
             <legend>공지사항</legend>

@@ -6,7 +6,7 @@
 // $s_idx = $_GET["g_idx"]; 
 
 // 데이터 가져오기 - 세션 활용
-include "../inc/session.php"
+include "../inc/session.php";
 
 // DB 연결
 include "../inc/dbcon.php";

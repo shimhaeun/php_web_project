@@ -75,7 +75,7 @@ echo "
 };
 
 // DB 종료
-mysql_close($dbcon);
+mysqli_close($dbcon);
 
 // 페이지 이동
 echo "

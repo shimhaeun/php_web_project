@@ -38,7 +38,7 @@ echo "
     <script type=\"text/javascript\">
         alert(\"일치하는 아이디가 없습니다.\");
         // location.href = \"login.php\";
-        history.back();
+        // history.back();
     </script>
 ";
 } else{ // 일치하는 아이디가 존재하면 DB에서 사용자 정보 가져오기
@@ -72,7 +72,7 @@ echo "
 };
 
 // DB 종료
-mysql_close($dbcon);
+mysqli_close($dbcon);
 
 // 페이지 이동
 echo "
