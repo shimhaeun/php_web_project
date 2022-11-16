@@ -1,7 +1,6 @@
 #nav{
 	height: 55px;
-	font: 15px Geneva, Arial, Helvetica, sans-serif;
-	background: white;
+	font-family: 'Nanum Gothic Coding', monospace;	background: white;
 	min-width:500px;
 	margin-left: 0px;
 	padding-left: 0px;
@@ -23,6 +22,7 @@
 	text-decoration: none;
 	height: 40px;
 	color: green;
+	font-family: 'Nanum Gothic Coding', monospace;
 }
 
 #nav ul{

@@ -34,8 +34,11 @@ mysqli_query($dbcon, $sql);
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>공지사항</title>
-    <link rel=stylesheet href="../css/main.css">
-    <style>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/dropdown.css">
+    <link rel="stylesheet" href="../css/notice.css">
+
+        <style>
         body{font-size:20px}
         a{text-decoration:none;margin:0 5px}
         table, td{border-collapse:collapse}
@@ -64,6 +67,8 @@ mysqli_query($dbcon, $sql);
         <?php }; ?>
     </style>
 <script src="js/jquery.bxslider.js"></script>
+<script src="/js/dropdown.js"></script>
+
     <script>
         function remove_notice(){
             var ck = confirm("정말 삭제하시겠습니까?");
