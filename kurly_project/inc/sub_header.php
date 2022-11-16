@@ -1,3 +1,13 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
 <div class="header-bottom">
     <div id="userMenu">
         <!-- <div class="delivery"><img src="img/delivery_190819.webp"></div> -->
@@ -12,20 +22,20 @@
                 <!-- 관리자 로그인 -->
                 <span class="pnt_name"><?php echo $s_name; ?>님, 안녕하세요. </span>
                 <a href="admin/index.php">[관리자 페이지]</a>
-                <a href="login/logout.php">로그아웃</a>
-                <a href="members/member_info.php">내정보</a>
+                <a href="../login/logout.php">로그아웃</a>
+                <a href="../members/member_info.php">내정보</a>
                 <?php } else { ?>
                 <span class="pnt_name"><?php echo $s_name; ?>님, 안녕하세요. </span>
-                <a href="login/logout.php">로그아웃</a>
-                <a href="members/member_info.php">내정보</a>
+                <a href="../login/logout.php">로그아웃</a>
+                <a href="../members/member_info.php">내정보</a>
                 <?php }; ?>
             <ul id="nav">
             <li class="yahoo"><a href="#">고객센터</a>
                 <ul>
-                    <li><a href="/notice/list.php">공지사항</a></li>
-                    <li><a href="#">자주하는질문</a></li>
-                    <li><a href="#">1:1 문의</a></li>
-                    <li><a href="#">대량주문 문의</a></li>
+                    <li><a href="../notice/list.php">공지사항</a></li>
+                    <li><a href="../notice/qna.php">자주하는질문</a></li>
+                    <li><a href="../notice/otoinquiry.php">1:1 문의</a></li>
+                    <li><a href="../notice/bulkorder.php">대량주문 문의</a></li>
                 </ul>
             </li>
             </ul>
@@ -34,7 +44,7 @@
 </div>
 <div id="headerLogo">
     <div class="logo">
-        <a href="#top"><img src="img/logo.jpg"></a>
+        <a href="#top"><img src="../img/logo.jpg"></a>
         <div class="logogroup">
             <div class="mkklogo" style="cursor: pointer;">
                 <a href="http://localhost/kurly_project" style="color: white;">
@@ -49,8 +59,8 @@
 </div>
 
 <div class="search">
-<input type="text" placeholder="빵빵한 라인업 온라인 빵지순례!"><a href="#"><img src="img/search_icon.png" class="sch"></a></input>
-<img src="img/heart.png" class="deli" style="cursor: pointer;"><img src="img/cart_icon.png" class="cart" style="cursor: pointer;">
+<input type="text" placeholder="빵빵한 라인업 온라인 빵지순례!"><a href="#"><img src="../img/search_icon.png" class="sch"></a></input>
+<img src="../img/heart.png" class="deli" style="cursor: pointer;"><img src="../img/cart_icon.png" class="cart" style="cursor: pointer;">
 </div>
 <!-- <div id="gnbMenu-cover"> -->
 <!-- <div id="gnbMenu"> -->
@@ -324,7 +334,3 @@
 </ul>
         <!-- category menu -->
     </div>
-<!-- </div> -->
-<!-- </div> -->
-<!-- </div> -->
-<!-- </div>	end of .header-bottom -->

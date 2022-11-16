@@ -14,6 +14,7 @@ include "../inc/admin_check.php";
         input[type=checkbox]{width:20px;height:20px}
         a{text-decoration:none;margin:0 5px}
     </style>
+    <link rel=stylesheet href="../css/main.css">
     <script>
         function notice_check(){
             var n_title = document.getElementById("n_title");
@@ -35,7 +36,7 @@ include "../inc/admin_check.php";
 </head>
 <body>
     <?php include "../inc/sub_header.html"; ?>
-    <form name="notice_form" action="insert.php" method="post" onsubmit="return notice_check()">
+    <form name="notice_form" action="insert.php" method="post" enctype="multipart/form-data" onsubmit="return notice_check()">
         <fieldset>
             <legend>공지사항</legend>
             <p>
@@ -52,6 +53,9 @@ include "../inc/admin_check.php";
                 <label for="n_content">내용</label>
                 <textarea cols="60" rows="10" name="n_content" id="n_content"></textarea>
             </p>
+            <p>
+                <label for="n_content">파일첨부</label>
+                <input type="file" name="up_file" id="up_file">
 
             <p>
                 <button type="button" onclick="history.back()">이전 페이지</button>

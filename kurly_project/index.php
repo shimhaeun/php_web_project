@@ -4,6 +4,9 @@
 <head>
 <meta charset="UTF-8">
 <title>마켓컬리 :: 내일의 장보기</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=**Nanum+Gothic+Coding:wght@700**&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/main.css">
 <link href="/css/flexnav.css" media="screen, projection" rel="stylesheet" type="text/css">
 <!-- <script src="/js/jquery.flexnav.js" type="text/javascript"></script> -->

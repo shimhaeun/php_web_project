@@ -34,6 +34,7 @@ mysqli_query($dbcon, $sql);
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>공지사항</title>
+    <link rel=stylesheet href="../css/main.css">
     <style>
         body{font-size:20px}
         a{text-decoration:none;margin:0 5px}
@@ -62,6 +63,7 @@ mysqli_query($dbcon, $sql);
         }
         <?php }; ?>
     </style>
+<script src="js/jquery.bxslider.js"></script>
     <script>
         function remove_notice(){
             var ck = confirm("정말 삭제하시겠습니까?");
@@ -102,8 +104,27 @@ mysqli_query($dbcon, $sql);
             <th class="v_title">조회수</th>
             <td class="v_content"><?php echo $cnt; ?></td>
         </tr>
+        <tr class="notice_view_content">
+            <th class="v_title">첨부파일</th>
+            <td class="v_content">
+            <a href="../data/<?php echo $array["f_name"]; ?>" download="<?php echo $array["f_name"]; ?>">
+            <?php echo $array["f_name"]; ?>
+            </a>
+        </td>
+        </tr>
         <tr class="notice_view_text">
             <td colspan="2" class="v_text">
+            <?php
+            // 첨부파일이 있고 이미지파일일 경우
+            if($array["f_name"] && substr($array["f_type"], 0, 5) == "image"){
+                $f_name = $array["f_name"];
+                echo "
+                <p>
+                    <img src=\"../data/$f_name\" alt=\"\">
+                </p>
+                ";
+            };
+            ?>
             <?php 
             // textarea의 엔터를 br로 변경
             // str_repalce("어떤 문자를", "어떤 문자로", "어떤 값에서");

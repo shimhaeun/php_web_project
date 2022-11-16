@@ -6,6 +6,18 @@ include "../inc/session.php";
 $n_title = $_POST["n_title"];
 $n_content = $_POST["n_content"];
 
+// 파일 업로드
+if($S_FILES["up_file"] != NULL){
+    $tmp_name = $_FILES["up_file"]["tmp_name"];
+    $name = $_FILES["up_file"]["name"];
+    // $up = move_uploaded_file(임시파일이름,"저장할 위치/저장할 이름");
+    $up = move_uploaded_file($tmp_name,"../data/$name");
+}
+
+$f_name = $_FILES["up_file"]["name"];
+$f_type = $_FILES["up_file"]["type"];
+$f_size = $_FILES["up_file"]["size"];
+
 // 작성일자
 $w_date = date("Y-m-d");
 
@@ -21,9 +33,11 @@ include "../inc/dbcon.php";
 
 // 쿼리 작성
 $sql = "insert into notice(";
-$sql .= "n_title, n_content, writer, w_date";
+$sql .= "n_title, n_content, writer, w_date, ";
+$sql .= "f_name, f_type, f_size";
 $sql .= ") values(";
-$sql .= "'$n_title', '$n_content', '$s_name', '$w_date'";
+$sql .= "'$n_title', '$n_content', '$s_name', '$w_date', ";
+$sql .= "'$f_name', '$f_type', '$f_size'";
 $sql .= ");";
 /* echo $sql;
 exit; */

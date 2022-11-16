@@ -56,41 +56,18 @@ if($e_pageNum > $total_page){
     <title>공지사항</title>
     <link rel="stylesheet" type="text/css" href="../css/dropdown.css">
     <link rel="stylesheet" type="text/css" href="../css/main.css">
-    <style>
-        body{font-size:20px}
-        a{text-decoration:none;margin:0 5px}
-
-        table, td{
-            border-collapse:collapse
-        }
-        th, td, .pager{
-            padding:10px;
-            font-size:16px;
-            text-align:center
-        }
-        .notice_list_set .pager{
-            width:740px
-        }
-        .notice_list_title{
-            border-top:2px solid #999;
-            border-bottom:1px solid #999
-        }
-        .notice_list_content{
-            border-bottom:1px solid #999;
-        }
-        .no{width:40px}
-        .n_title{width:400px}
-        .writer{width:100px}
-        .w_date{width:120px}
-        .cnt{width:80px}
-
-        table a:hover{color:rgb(255, 128, 0)}
-    </style>
+    <link rel="stylesheet" type="text/css" href="../css/notice.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@700&display=swap" rel="stylesheet">
+    <header>
+        <?php include "../inc/sub_header.php"; ?>
+    </header>
 </head>
+
 <body>
-    <?php include "../inc/sub_header.php"; ?>
     <!-- 콘텐트 -->
-    <h2>공지사항</h2>
+    <h2 class="notice">공지사항</h2>
     <p>전체 <?php echo $total; ?>개</p>
     <table class="notice_list_set">
         <tr class="notice_list_title">

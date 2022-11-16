@@ -13,6 +13,8 @@ include "../inc/session.php";
         body,input,button,textarea{font-size:20px}
         input[type=checkbox]{width:20px;height:20px}
     </style>
+    <script src="js/jquery.bxslider.js"></script>
+
     <script>
         function notice_check(){
             var n_title = document.getElementById("n_title");
@@ -34,7 +36,7 @@ include "../inc/session.php";
 </head>
 <body>
     <?php include "../inc/sub_header.php"; ?>
-    <form name="notice_form" action="insert.php" method="post" onsubmit="return notice_check()">
+    <form name="notice_form" action="insert.php" method="post" enctype="multipart/form-data" onsubmit="return notice_check()">
         <fieldset>
             <legend>공지사항</legend>
             <p>
@@ -50,6 +52,10 @@ include "../inc/session.php";
             <p>
                 <label for="n_content">내용</label>
                 <textarea cols="60" rows="10" name="n_content" id="n_content"></textarea>
+            </p>
+            <p>
+                <label for="n_content">첨부파일[<?php echo $array ["f_name"];?>]</label>
+                <input type="file" name="up_file" id="up_file">
             </p>
 
             <p>
