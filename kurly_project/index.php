@@ -24,7 +24,7 @@
 <script src="/js/timer.js"></script>
 <script src="js/bxslider.js"></script>
 <!-- jQuery -->
-<!-- <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script> -->
+<!-- <script irc="https://code.jquery.com/jquery-3.4.0.min.js"></script> -->
 <!-- Multi level Menu CSS -->
 <link rel="stylesheet" href="/css/dropdown.css">
 <!-- Multi level Menu Js -->

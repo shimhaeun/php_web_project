@@ -20,15 +20,15 @@
             <li class="site-name"><a href="#"></a></li>
             <?php } else if($s_id == "admin"){ ?>
                 <!-- 관리자 로그인 -->
-                <span class="pnt_name"><?php echo $s_name; ?>님, 안녕하세요. </span>
-                <a href="admin/index.php">[관리자 페이지]</a>
+                <a href="admin/index.php">관리자 페이지</a>
                 <a href="../login/logout.php">로그아웃</a>
                 <a href="../members/member_info.php">내정보</a>
                 <?php } else { ?>
+                <!-- 로그인 후 -->
                 <span class="pnt_name"><?php echo $s_name; ?>님, 안녕하세요. </span>
                 <a href="../login/logout.php">로그아웃</a>
                 <a href="../members/member_info.php">내정보</a>
-                <?php }; ?>
+                <?php } ?>
             <ul id="nav">
             <li class="yahoo"><a href="#">고객센터</a>
                 <ul>

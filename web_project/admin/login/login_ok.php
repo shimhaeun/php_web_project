@@ -32,11 +32,11 @@ $result = mysqli_query($dbcon, $sql);
 // echo $array["pwd"];
 
 // mysqli_num_rows("전송한 쿼리"); // 전체 데이터 수
-mysqli_num_rows($result);
-echo $num;
+$num = mysqli_num_rows($result);
+// echo $num;
 
 // 조건 처리
-if(!$sum){ // 일치하는 아이디가 없다면 메세지 출력 후 이전 페이지로 이동
+if(!$num){ // 일치하는 아이디가 없다면 메세지 출력 후 이전 페이지로 이동
 echo "
     <script type=\"text/javascript\">
         alert(\"일치하는 아이디가 없습니다.\");
