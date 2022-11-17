@@ -23,9 +23,7 @@
 <script src="../js/bxslider.js"></script>
 <!-- jQuery -->
 <!-- <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script> -->
-<!-- Multi level Menu CSS -->
 <link rel="stylesheet" href="../css/dropdown.css">
-<!-- Multi level Menu Js -->
 <script src="../js/dropdown.js"></script>
 <script>
 	function login_form_check(){
@@ -50,14 +48,14 @@
 <body>
 <!-- 로그인 -->
 <div id="content">
-	<fieldset>
-    <div class="section_login">
+  <div class="section_login">
+      <fieldset>
       <h3 class="tit_login">로그인</h3>
       <div class="login_box">
         <div class="login_view">
           <form name="login_form" action="login_ok.php" method="POST" id="login_form" onsubmit="return login_form_check()">
-            <input type="text" name="id" size="20" tabindex="1" placeholder="아이디를 입력해주세요">
-            <input type="password" name="password" size="20" tabindex="2" placeholder="비밀번호를 입력해주세요">
+            <input type="text" name="u_id" id="u_id" size="20" tabindex="1" placeholder="아이디를 입력해주세요" label for="u_id" autofocus>
+            <input type="password" name="pwd" id="pwd" size="20" tabindex="2" placeholder="비밀번호를 입력해주세요" label for="pwd">
             <div class="checkbox_save">
               <label class="label_checkbox checked" >
 

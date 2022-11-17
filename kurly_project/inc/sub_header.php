@@ -13,7 +13,7 @@
         <!-- <div class="delivery"><img src="img/delivery_190819.webp"></div> -->
     <div class="gnb1">
         <ul>
-            <?php if(!$s_idx){ ?>
+            <?php if(!$s_id){ ?>
                 <!-- 로그인 전 -->
             <li><a href="members/join.php" class="purple">회원가입</a></li>
             <li><a href="login/login.php">로그인</a></li>

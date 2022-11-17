@@ -23,6 +23,7 @@
 	height: 40px;
 	color: green;
 	font-family: 'Nanum Gothic Coding', monospace;
+	
 }
 
 #nav ul{
@@ -56,6 +57,8 @@
 }
 #nav li a{
 	display: block;
+	flex-direction: column;
+    width: 100px;
 }
 #nav ul li {
 	border-right:none;
