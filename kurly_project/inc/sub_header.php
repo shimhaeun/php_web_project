@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../css/sr1.css">
+    <link rel="stylesheet" type="text/css" href="../css/my.css">
+    <link rel="stylesheet" type="text/css" href="../css/normalize.css">
 </head>
 <body>
     
@@ -15,12 +18,12 @@
         <ul>
             <?php if(!$s_id){ ?>
                 <!-- 로그인 전 -->
-            <li><a href="members/join.php" class="purple">회원가입</a></li>
-            <li><a href="login/login.php">로그인</a></li>
+            <li class="menu_join"><a href="members/join.php" class="link_menu">회원가입</a></li>
+            <li class="menu_login"><a href="login/login.php">로그인</a></li>
             <li class="site-name"><a href="#"></a></li>
             <?php } else if($s_id == "admin" ){ ?>
                 <!-- 관리자 로그인 -->
-                <a href="admin/index.php">관리자 페이지</a>
+                <a href="../admin/index.php">관리자 페이지</a>
                 <a href="../login/logout.php">로그아웃</a>
                 <a href="../members/member_info.php">내정보</a>
                 <?php } else { ?>
@@ -29,13 +32,13 @@
                 <a href="../login/logout.php">로그아웃</a>
                 <a href="../members/member_info.php">내정보</a>
                 <?php } ?>
-            <ul id="nav">
-            <li class="yahoo"><a href="#">고객센터</a>
+                <ul id="nav">
+            <li class="menu lst"><a href="#" class="link_menu">고객센터</a>
                 <ul>
-                    <li><a href="../notice/list.php">공지사항</a></li>
-                    <li><a href="../notice/qna.php">자주하는질문</a></li>
-                    <li><a href="../notice/otoinquiry.php">1:1 문의</a></li>
-                    <li><a href="../notice/bulkorder.php">대량주문 문의</a></li>
+                    <li><a href="notice/list.php">공지사항</a></li>
+                    <li><a href="notice/qna.php">자주하는질문</a></li>
+                    <li><a href="notice/otoinquiry.php">1:1 문의</a></li>
+                    <li><a href="notice/bulkorder.php">대량주문 문의</a></li>
                 </ul>
             </li>
             </ul>
@@ -59,8 +62,8 @@
 </div>
 
 <div class="search">
-<input type="text" placeholder="빵빵한 라인업 온라인 빵지순례!"><a href="#"><img src="../img/search_icon.png" class="sch"></a></input>
-<img src="../img/heart.png" class="deli" style="cursor: pointer;"><img src="../img/cart_icon.png" class="cart" style="cursor: pointer;">
+<input type="text" placeholder="빵빵한 라인업 온라인 빵지순례!"><a href="#"><img src="img/search_icon.png" class="sch"></a></input>
+<img src="img/heart.png" class="deli" style="cursor: pointer;"><img src="img/cart_icon.png" class="cart" style="cursor: pointer;">
 </div>
 <!-- <div id="gnbMenu-cover"> -->
 <!-- <div id="gnbMenu"> -->
@@ -69,6 +72,8 @@
         <ul id="nav">
                 <li class="yahoo"><a href="#">카테고리</a>
                     <ul>
+        <li><a href="goods/goodslist_all.php">전체보기</a></li>
+
         <li><a href="#">선물하기</a>            
             <ul>
                 <li><a href="#">홍삼·즙</a></li>
@@ -82,19 +87,19 @@
         </li>
         <li><a href="#">채소</a>            
             <ul>
-                <li><a href="#">친환경</a></li>
-                <li><a href="#">고구마·감자·당근</a></li>
-                <li><a href="#">시금치·쌈채소·나물</a></li>
-                <li><a href="#">브로콜리·파프리카·양배추</a></li>
-                <li><a href="#">양파·대파·마늘·배추</a></li>
-                <li><a href="#">오이·호박·고추</a></li>
-                <li><a href="#">냉동·이색·간편채소</a></li>
-                <li><a href="#">콩나물·버섯</a></li>
+                <li><a href="goods/goodslist_eco.html">친환경</a></li>
+                <li><a href="goods/goodslist_sweetpotato.html">고구마·감자·당근</a></li>
+                <li><a href="goods/goodslist_spinach.html">시금치·쌈채소·나물</a></li>
+                <li><a href="goods/goodslist_broccoli.html">브로콜리·파프리카·양배추</a></li>
+                <li><a href="goods/goodslist_onion.html">양파·대파·마늘·배추</a></li>
+                <li><a href="goods/goodslist_cucumber.html">오이·호박·고추</a></li>
+                <li><a href="goods/goodslist_frozen.html">냉동·이색·간편채소</a></li>
+                <li><a href="gooods/goodslist_beansprouts.html">콩나물·버섯</a></li>
               </ul>
         </li>
         <li><a href="#">과일·견과·쌀</a>            
             <ul>
-                <li><a href="#">친환경</a></li>
+                <li><a href="goods/goodslist_eco.html">친환경</a></li>
                 <li><a href="#">제철과일</a>
                 <li><a href="#">국산과일</a>
                 <li><a href="#">수입과일</a>

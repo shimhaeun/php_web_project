@@ -32,6 +32,10 @@ mysqli_close($dbcon);
         input[type=checkbox]{width:20px;height:20px}
         a{text-decoration:none;margin:0 5px}
     </style>
+    <link rel="stylesheet" href="/css/dropdown.css">
+    <script src="../js/dropdown.js"></script>
+    
+
     <script>
         function notice_check(){
             var n_title = document.getElementById("n_title");
@@ -52,7 +56,7 @@ mysqli_close($dbcon);
     </script>
 </head>
 <body>
-    <?php include "../inc/sub_header.html"; ?>
+    <?php include "../inc/sub_header.php"; ?>
     <form name="notice_form" action="edit.php?n_idx=<?php echo $n_idx; ?>" method="post" onsubmit="return notice_check()">
         <fieldset>
             <legend>공지사항</legend>

@@ -106,7 +106,6 @@ $sql = "select * from members where idx=$g_idx";
                 <p class="c_line">
                     아이디 <?php echo $array["u_id"]; ?>
                 </p>
-
                 <p class="c_line">
                     <label for="pwd" class="c_title">비밀번호</label>
                     <input type="text" name="pwd" id="pwd">

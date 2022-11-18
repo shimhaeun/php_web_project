@@ -34,6 +34,7 @@ mysqli_query($dbcon, $sql);
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>공지사항</title>
+    <link rel="stylesheet" href="../css/dropdown.css">
     <style>
         body{font-size:20px}
         a{text-decoration:none;margin:0 5px}
@@ -62,6 +63,7 @@ mysqli_query($dbcon, $sql);
         }
         <?php }; ?>
     </style>
+    <script >
     <script>
         function remove_notice(){
             var ck = confirm("정말 삭제하시겠습니까?");
@@ -72,7 +74,7 @@ mysqli_query($dbcon, $sql);
     </script>
 </head>
 <body>
-    <?php include "../inc/sub_header.html"; ?>
+    <?php include "../inc/sub_header.php"; ?>
     <!-- 콘텐트 -->
     <h2>공지사항</h2>
     <?php if($s_id == "admin"){ ?>

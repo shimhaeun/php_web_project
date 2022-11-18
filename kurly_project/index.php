@@ -8,6 +8,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=**Nanum+Gothic+Coding:wght@700**&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/main.css">
+<!-- <link rel="styleSheet" href="css/main2.css"> -->
+<!-- <link rel="styleSheet" href="css/normalize.css"> -->
+<!-- <link rel="styleSheet" href="css/index.css"> -->
 <link href="/css/flexnav.css" media="screen, projection" rel="stylesheet" type="text/css">
 <!-- <script src="/js/jquery.flexnav.js" type="text/javascript"></script> -->
 </head> 
@@ -183,6 +186,7 @@
 <h2 class="title-goods">MD의 추천</h2>
 	<div class="category">
 		<ul class="tabs">
+			<li><a href="goodslist_all.php">전체보기</a></li>
 			<li><a href="#content-1">채소</a></li>
 			<li><a href="#content-2">과일.견과.쌀</a></li>
 			<li><a href="#content-3">수산.해산.건어물</a></li>
@@ -690,7 +694,8 @@
 		<div class="company">
 			<ul class="gnb3">
 				<li><a href="#">컬리소개</a></li>
-				<li><a href="#">컬리소개영상</a></li>
+				<li><a href="https://www.youtube.com/embed/WEep7BcboMQ?rel=0&amp;showinfo=0&amp;wmode=opaque&amp;enablej" 
+				onclick="window.open(this.href, 'pop', 'width=1330,height=660,scrollbars=yes');return false;">컬리소개영상</a></li>
 				<li><a href="#">인재채용</a></li>
 				<li><a href="#">이용약관</a></li>
 				<li><a href="#"><span class="police">개인정보처리방침</span></a></li>
@@ -707,18 +712,18 @@
 			</address>
 
 			<div class="sns">
-				<img src="img/instagram_icon.png">
-				<img src="img/facebook_icon.png">
-				<img src="img/blog_icon.png">
-				<img src="img/naverpost_icon.png">
-				<img src="img/youtube_icon.png">
+				<img src="img/ico_instagram.png">
+				<img src="img/ico_facebook.png">
+				<img src="img/ico_blog.png">
+				<img src="img/ico_naverpost.png">
+				<img src="img/ico_youtube.png">
 			</div>
 		</div>
 	</div>	<!-- end of .footer-inner -->
 
 	<div class="footer-link">
 		<dl class="foot">
-			<dt><img src="img/isms_icon.png"></dt>
+			<dt><img src="img/logo_isms.png"></dt>
 			<dd class="foot-txt">
 				[인증범위]마켓컬리 쇼핑몰 서비스 개발.운영<br>
 				[유효기간]2019.04.01~2022.03.31
@@ -726,7 +731,7 @@
 		</dl>
 		
 		<dl class="foot">
-			<dt><img src="img/eprivacy_icon.png"></dt>
+			<dt><img src="img/logo_eprivacyplus.png"></dt>
 			<dd class="foot-txt">
 				개인정보보호 우수 웹사이트.<br>
 				개인정보처리시스템인증(ePRIVACY PLUS)
@@ -734,7 +739,7 @@
 		</dl>	
 
 		<dl class="foot2">
-			<dt><img src="img/toss_icon.png"></dt>
+			<dt><img src="img/logo_payments.png"></dt>
 			<dd class="foot-txt2">
 				고객님의 안전거래를 위해 현금 등으로 결제 시 저희 쇼핑몰에서 가입한<br>
 				토스 페이먼츠 구매안전(에스크로)서비스를 이용하실 수 있습니다.

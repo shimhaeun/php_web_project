@@ -37,7 +37,6 @@ $array = mysqli_fetch_array($result);
         function edit_form_check(){
             var pwd = document.getElementById("pwd");
             var repwd = document.getElementById("repwd");
-
             if(pwd.value){
                 var pw_len = pwd.value.length;
                 if(pw_len < 4 || pw_len > 12){
@@ -75,7 +74,7 @@ $array = mysqli_fetch_array($result);
     </script>
 </head>
 <body>
-    <?php include "../inc/sub_header.html"; ?>
+    <?php include "../inc/sub_header.php"; ?>
     <!-- <form name="edit_form" action="edit.php?g_idx=<?php echo $g_idx; ?>" method="post" onsubmit="return edit_form_check()"> -->
     <form name="edit_form" action="edit.php" method="post" onsubmit="return edit_form_check()">
         <fieldset>

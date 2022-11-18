@@ -59,18 +59,18 @@ if($e_pageNum > $total_page){
         a{text-decoration:none;margin:0 5px}
 
         table, td{
-            border-collapse:collapse
+            border-collapse:collapse;
         }
         th, td, .pager{
-            padding:10px;
-            text-align:center
+            padding:15px;
+            text-align:center;
         }
         .notice_list_set, .pager{
-            width:860px
+            width:860px;
         }
         .notice_list_title{
             border-top:2px solid #999;
-            border-bottom:1px solid #999
+            border-bottom:1px solid #999;
         }
         .notice_list_content{
             border-bottom:1px solid #999;
@@ -94,7 +94,7 @@ if($e_pageNum > $total_page){
     </style>
 </head>
 <body>
-    <?php include "../inc/sub_header.html"; ?>
+    <?php include "../../inc/sub_header.php"; ?>
     <!-- 콘텐트 -->
     <h2>공지사항</h2>
     <?php if($s_id == "admin"){ ?>

@@ -93,7 +93,7 @@ if($e_pageNum > $total_page){
     <script>
         function mem_del(g_no){
             var rtn_val = confirm("정말 삭제하시겠습니까?");
-            if(rtn_val == true){
+            if(rtn_val == true)
                 location.href = "member_delete.php?g_idx=" + g_no;
             };
         };

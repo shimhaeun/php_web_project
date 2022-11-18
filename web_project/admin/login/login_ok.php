@@ -1,8 +1,5 @@
-v<?php
+<?php
 
-error_reporting(E_ALL);
-
-ini_set('display_errors', '1');
 // 세션 시작
 session_start();
 
