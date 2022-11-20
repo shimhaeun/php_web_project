@@ -143,6 +143,7 @@ header{
 	border-radius: 15px;
 	float: left;
 	text-align: center;
+	font-size: 18px;
 }
 .btklogo {
 	width: 80px;
@@ -153,6 +154,7 @@ header{
 	float: right;
 	left: -100px;
 	text-align: center;
+	font-size: 18px;
 }
 /* gnb */
 #gnbMenu-cover{

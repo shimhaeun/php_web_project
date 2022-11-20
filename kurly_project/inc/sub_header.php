@@ -8,6 +8,13 @@
     <link rel="stylesheet" type="text/css" href="../css/sr1.css">
     <link rel="stylesheet" type="text/css" href="../css/my.css">
     <link rel="stylesheet" type="text/css" href="../css/normalize.css">
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/sub_header.css">
+    <link rel="stylesheet" type="text/css" href="../css/dropdown.css">
+    <script type="text/javascript" src="../js/jquery-3.6.1.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.flexnav.min.js"></script>
+    <script type="text/javascript" src="[//use.typekit.net/qyb8ood.js](https://use.typekit.net/qyb8ood.js)"></script>
+    <script src="../js/dropdown.js"></script>
 </head>
 <body>
     
@@ -49,12 +56,12 @@
     <div class="logo">
         <a href="#top"><img src="../img/logo.jpg"></a>
         <div class="logogroup">
-            <div class="mkklogo" style="cursor: pointer;">
+            <div class="mkklogo" style="cursor: pointer; font-size: 18px;">
                 <a href="http://localhost/kurly_project" style="color: white;">
                     마켓컬리
                 </a>
             </div>
-            <div class="btklogo" style="cursor: pointer;">
+            <div class="btklogo" style="cursor: pointer; font-size: 18px;">
                 뷰티컬리
             </div>
         </div>

@@ -34,7 +34,12 @@ mysqli_query($dbcon, $sql);
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>공지사항</title>
-    <link rel="stylesheet" href="../css/dropdown.css">
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../../css/dropdown.css">
+    <script type="text/javascript" src="../../js/jquery-3.6.1.min.js"></script>
+    <script type="text/javascript" src="../../js/jquery.flexnav.min.js"></script>
+    <script type="text/javascript" src="//use.typekit.net/qyb8ood.js"></script>
+    <script src="../../js/dropdown.js"></script>
     <style>
         body{font-size:20px}
         a{text-decoration:none;margin:0 5px}
@@ -74,8 +79,8 @@ mysqli_query($dbcon, $sql);
     </script>
 </head>
 <body>
-    <?php include "../inc/sub_header.php"; ?>
-    <!-- 콘텐트 -->
+    <?php include "../../inc/sub_header.php"; ?>
+    // <!-- 콘텐트 -->
     <h2>공지사항</h2>
     <?php if($s_id == "admin"){ ?>
     <p class="write_area">

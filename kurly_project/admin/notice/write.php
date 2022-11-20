@@ -1,6 +1,6 @@
 <?php 
 include "../inc/session.php"; 
-include "../inc/admin_check.php";
+include "../../inc/admin_check.php";
 ?>
 <!DOCTYPE html>
 <html lang="ko">
@@ -9,10 +9,17 @@ include "../inc/admin_check.php";
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>공지사항</title>
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../../css/dropdown.css">
+    <script type="text/javascript" src="../../js/jquery-3.6.1.min.js"></script>
+    <script type="text/javascript" src="../../js/jquery.flexnav.min.js"></script>
+    <script type="text/javascript" src="[//use.typekit.net/qyb8ood.js](https://use.typekit.net/qyb8ood.js)"></script>
+    <script src="../../js/dropdown.js"></script>
     <style>
         body,input,button,textarea{font-size:20px}
-        input[type=checkbox]{width:20px;height:20px}
+        input[type=checkbox]{width:20px;height:30px}
         a{text-decoration:none;margin:0 5px}
+        fieldset {padding:50px;margin:50px;}
     </style>
     <script>
         function notice_check(){

@@ -1,10 +1,12 @@
 #nav{
 	height: 55px;
 	font-family: 'Nanum Gothic Coding', monospace;	background: white;
+	font-size: 15px;
 	min-width:500px;
 	margin-left: 0px;
 	padding-left: 0px;
 	margin: auto;
+	
 }	
 
 #nav li{
