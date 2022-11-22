@@ -21,13 +21,8 @@
 <script type="text/javascript" src="//use.typekit.net/qyb8ood.js"></script>
 <script src="../js/timer.js"></script>
 <script src="../js/bxslider.js"></script>
-<!-- jQuery -->
-<!-- <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script> -->
-<!-- Multi level Menu CSS -->
 <link rel="stylesheet" href="../css/dropdown.css">
-<!-- Multi level Menu Js -->
 <script src="../js/dropdown.js"></script>
-			<!-- category menu -->
 		</div>
     <?php include "../inc/sub_header.php" ?>
     <!-- 상품 상세 페이지 -->

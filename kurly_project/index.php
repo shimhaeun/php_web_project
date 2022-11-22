@@ -1,41 +1,4 @@
-<?php include "inc/sub_header.php" ?>
-<!doctype html>
-<html lang="ko">
-<head>
-<meta charset="UTF-8">
-<title>마켓컬리 :: 내일의 장보기</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=**Nanum+Gothic+Coding:wght@700**&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/main.css">
-<!-- <link rel="styleSheet" href="../css/main2.css"> -->
-<link rel="styleSheet" href="css/normalize.css">
-<!-- <link rel="styleSheet" href="css/index.css"> -->
-<link rel="stylesheet" href="css/sub_header.css">
-<link href="/css/flexnav.css" media="screen, projection" rel="stylesheet" type="text/css">
-<script src="/js/jquery.flexnav.js" type="text/javascript"></script>
-</head> 
-<body>
-<script type="text/javascript" src="/js/jquery-3.6.1.min.js"></script>
-<link rel="stylesheet" href="css/jquery.bxslider.css">
-<script src="http://code.jquery.com/jquery-1.9.0.js" type="text/javascript"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script type="text/javascript" src="js/jquery.flexnav.min.js"></script>
-<script src="js/jquery.bxslider.js"></script>
-<link rel="stylesheet" type="text/css" href="css/dropdown.css">
-<script type="text/javascript" src="js/jquery.flexnav.min.js"></script>
-<script type="text/javascript" src="//use.typekit.net/qyb8ood.js"></script>
-<script src="/js/timer.js"></script>
-<script src="js/bxslider.js"></script>
-<!-- jQuery -->
-<!-- <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script> -->
-<!-- Multi level Menu CSS -->
-<link rel="stylesheet" href="/css/dropdown.css">
-<!-- Multi level Menu Js -->
-<script src="/js/dropdown.js"></script>
-<header>
-</header>
-
+<?php include "inc/header.php";?>
 <section id="main-slide">
 	<div class="slides">
 		<div class="slide"><img src="img/main.png">
@@ -45,7 +8,7 @@
 		<img src="img/slide3.png">
 		<img src="img/slide4.png">
 		<img src="img/slide5.png">
-		</div>
+		</div> 
 	</div>
 </section>	<!-- end of #main-slide-->
  

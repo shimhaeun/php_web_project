@@ -1,5 +1,5 @@
 <?php
-include "../inc/session.php";
+// include "../inc/session.php";
 
 // DB 연결
 include "../inc/dbcon.php";
