@@ -1,5 +1,25 @@
-.sch {
+/* .sch {
     width: 36px;
     height: 36px;
     background: url("../img/ico_search_x2.png");
 }
+.deli {
+    width: 36px;
+    height: 36px;
+    background: url("../img/cart_icon.png");
+} */
+.menu_join {
+    float: right;
+    width: 1050px;
+    height: 40px;
+}
+.member_login {
+    float: right;
+    width: 1050px;
+    height: 40px;
+}
+#userMenu .none_sub:hover .sub{display:none}
+#userMenu .sub a{font-size:12px;color:green;line-height:24px;white-space:nowrap;cursor:pointer}
+#userMenu .sub .ico_new{margin:7px 0 0 1px}
+#userMenu .none_sub:before,#userMenu .lst:after{display:none}
+#userMenu .none_sub .link_menu{padding-right:11px} 

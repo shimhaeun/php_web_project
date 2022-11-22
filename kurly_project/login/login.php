@@ -7,6 +7,12 @@
     <title>login</title>
     <link rel="stylesheet" type="text/css" href="../css/login.css">
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="styleSheet" href="../normalize.css">
+    <link rel="styleSheet" href="../../index.css">
+    <link rel="stylesheet" href="../../css/sub_header.css">
+
+    <script type="text/javascript" src="../js/jquery-3.6.1.min.js"></script>
+    <script type="text/javascript" src="../j=s/jquery.flexnav.min.js"></script>
 <link href="../css/flexnav.css" media="screen, projection" rel="stylesheet" type="text/css">
 <!-- <script src="/js/jquery.flexnav.js" type="text/javascript"></script> -->
 </head> 
@@ -42,8 +48,8 @@
             };
         };
 </script>
+<?php include "../inc/sub_header.php" ?>
 <header>
-	<?php include "../inc/sub_header.php" ?>
 </head>
 <body>
 <!-- 로그인 -->

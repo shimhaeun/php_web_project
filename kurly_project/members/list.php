@@ -54,8 +54,15 @@ if($e_pageNum > $total_page){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="styleSheet" href="../css/main.css">
+
     <title>회원관리</title>
     <style>
+        .content {
+            padding-top:50px;
+            padding-left:20px;
+            padding-right:20px;   
+        }
         body{font-size:20px}
         a{text-decoration:none;margin:0 5px}
 
@@ -68,7 +75,7 @@ if($e_pageNum > $total_page){
             text-align:center
         }
         .mem_list_set, .pager{
-            width:1440px
+            width:1200px;
         }
         .mem_list_title{
             border-top:2px solid #999;
@@ -93,7 +100,7 @@ if($e_pageNum > $total_page){
     <script>
         function mem_del(g_no){
             var rtn_val = confirm("정말 삭제하시겠습니까?");
-            if(rtn_val == true)
+            if(rtn_vl == true)
                 location.href = "member_delete.php?g_idx=" + g_no;
             };
         };
@@ -103,6 +110,7 @@ if($e_pageNum > $total_page){
     <?php include "../inc/sub_header.php"; ?>
     
     <!-- 콘텐트 -->
+    <div class="content">
     <p>전체 회원수 <?php echo $total; ?>명</p>
     <table class="mem_list_set">
         <tr class="mem_list_title">
@@ -199,5 +207,6 @@ if($e_pageNum > $total_page){
     <a href="list.php?page=<?php echo ($page + 1); ?>">다음</a>
     <?php }; ?>
     </p>
+    </div>
 </body>
 </html>

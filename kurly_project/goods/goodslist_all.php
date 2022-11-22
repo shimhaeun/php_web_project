@@ -1,4 +1,3 @@
-<?php include "../inc/sub_header.php" ?>
 <!DOCTYPE html>
 <html lang="ko">
 <!-- css만으로 토글 만들기 정렬 버튼 -->
@@ -36,13 +35,16 @@
     <link rel="icon" type="image/png" sizes="16x16" href="https://res.kurly.com/images/marketkurly/logo/ico_16.png">
 
     <link rel="styleSheet" href="../css/main2.css">
-    <!-- <link rel="styleSheet" href="../css/main.css"> -->
+    <link rel="styleSheet" href="../css/main.css">
     <link rel="styleSheet" href="../css/normalize.css">
     <link rel="styleSheet" href="../css/index.css">
     <link rel="styleSheet" href="../css/flexnav.css">
     <link rel="styleSheet" href="../js/jquery.bxslider.css">
     <link rel="styleSheet" href="../js/sr1.css">
-    
+    <link rel="stylesheet" type="text/css" href="../../css/dropdown.css">
+    <script type="text/javascript" src="../js/jquery-3.6.1.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.flexnav.min.js"></script>
+    <script type="text/javascript" src="//use.typekit.net/qyb8ood.js"></script>
     <script src="../js/bxslider.js"></script>
     <script src="../js/dropdown.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -52,116 +54,8 @@
 
     <link rel="stylesheet" href="../css/goodslist_all.css">
 </head>
-
+<?php include "../inc/sub_header.php" ?>
 <body>
-    <div class="wrap">
-        <div id="header">
-            <div id="userMenu">
-                <ul class="list_menu">
-                    <li class="menu none_sub menu_join">
-                        <a href="/members/join.php" class="link_menu">회원가입</a>
-                        <!-- <a href="" class="link_menu">회원가입</a> -->
-
-                    </li>
-                    <li class="menu none_sub menu_login">
-                        <a href="https://www.kurly.com/shop/member/login.php" class="link_menu">로그인</a>
-                        <!-- <a href="" class="link_menu">로그인</a> -->
-
-                    </li>
-                    <li class="menu lst">
-
-                        <!-- <a href="" class="link_menu">고객센터</a> -->
-                        <a href="https://www.kurly.com/shop/board/list.php?id=notice" class="link_menu">고객센터</a>
-                    </li>
-                </ul>
-            </div>
-            <div id="headerLogo" class="layout-wrapper">
-                <h1 class="logo">
-                    <a href="../index.php" class="link_main">
-                        <span id="gnbLogoContainer"></span>
-                        <img src="https://res.kurly.com/images/marketkurly/logo/logo_x2.png" alt="마켓컬리 로고"
-                            style="display: block;">
-                    </a>
-                </h1>
-                <a href="https://www.kurly.com/shop/board/view.php?id=notice&no=64" class="bnr_delivery">
-                    <img src="https://res.kurly.com/pc/service/common/2011/delivery_200323.gif"
-                        alt="수도권, 충정 샛별 배송, 그외 지역 택배배송">
-                </a>
-            </div>
-            <div id="gnb">
-                <h2 class="screen_out">메뉴</h2>
-                <div id="gnbMenu" class="gnb_kurly">
-                    <div class="inner_gnbkurly">
-                        <div class="gnb_main">
-                            <ul class="gnb">
-                                <li class="menu1">
-                                    <a href="#none">
-                                        <span class="ico"></span>
-                                        <span class="txt">전체 카테고리</span>
-                                    </a>
-                                </li>
-                                <li class="menu2">
-                                    <a href="https://www.kurly.com/shop/goods/goods_list.php?category=038"
-                                        class="link new">
-                                        <span class="txt">신상품</span>
-                                    </a>
-                                </li>
-                                <li class="menu3">
-                                    <a href="https://www.kurly.com/shop/goods/goods_list.php?category=029"
-                                        class="link best">
-                                        <span class="txt">베스트</span>
-                                    </a>
-                                </li>
-                                <li class="menu4">
-                                    <a href="https://www.kurly.com/shop/goods/goods_list.php?list=sale"
-                                        class="link bargain">
-                                        <span class="txt">알뜰쇼핑</span>
-                                    </a>
-                                </li>
-                                <li class="lst">
-                                    <a href="https://www.kurly.com/shop/goods/event.php?&" class="link event">
-                                        <span class="txt">특가/혜택</span>
-                                    </a>
-                                </li>
-                            </ul>
-                            <div id="side_search" class="gnb_search">
-                                <form action="https://www.kurly.com/shop/goods/goods_search.php?&">
-                                    <input type="hidden" name="searched" value="Y">
-                                    <input type="hidden" name="log" value="1">
-                                    <input type="hidden" name="skey" value="all">
-                                    <input type="hidden" name="hid_pr_text" value>
-                                    <input type="hidden" name="hid_link_url" value>
-                                    <input type="hidden" id="edit" name="edit" value>
-                                    <input name="sword" type="text" id value required="required" label="검색어"
-                                        class="inp_search">
-                                    <input type="image"
-                                        src="https://res.kurly.com/pc/service/common/1908/ico_search_x2.png"
-                                        class="btn_search">
-                                </form>
-                            </div>
-                            <div class="cart_count">
-                                <div class="inner_cartcount">
-                                    <a href="https://www.kurly.com/shop/goods/goods_cart.php" class="btn_cart">
-                                        <span class="screen_out">장바구니</span>
-                                        <span id="cart_item_count" class="nu realtime_cartcount"
-                                            style="display: none;"></span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="location_set">
-                                <button type="button" class="btn_location on">배송지 설정하기</button>
-                                <div class="layer_location">
-                                    <div class="no_address">
-                                        <span class="emph">배송지를 등록</span>하고<br> 구매 가능한 상품을 확인하세요!
-                                        <div class="group_button double">
-                                            <button type="button" class="btn default login">로그인</button>
-                                            <button type="button" class="btn active searchAddress"><span
-                                                    class="ico"></span>주소검색</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                         <div calss="gnb_sub" style="display: none; width: 219px;">
                             <div class="inner_sub">
                                 <ul data-default="219" data-min="219" data-max="731" class="gnb_menu"

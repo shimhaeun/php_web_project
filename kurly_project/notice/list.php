@@ -55,9 +55,13 @@ if($e_pageNum > $total_page){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>공지사항</title>
     <link rel="stylesheet" type="text/css" href="../css/dropdown.css">
-    <link rel="stylesheet" type="text/css" href="../css/main.css">
-    <link rel="stylesheet" type="text/css" href="../css/notice.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- <link rel="stylesheet" type="text/css" href="../css/main.css"> -->
+    <link rel="stylesheet" type="text/css" href="../css/board.css">
+    <link rel="styleSheet" href="../css/main.css">
+        <link rel="styleSheet" href="../css/normalize.css">
+        <!-- <link rel="styleSheet" href="../css/index.css"> -->
+        <script type="text/javascript" src="../../js/jquery-3.6.1.min.js"></script>
+        <script type="text/javascript" src="../js/jquery.flexnav.min.js"></script>    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@700&display=swap" rel="stylesheet">
     <header>
@@ -67,6 +71,9 @@ if($e_pageNum > $total_page){
 
 <body>
     <!-- 콘텐트 -->
+    <div>
+    </div>
+    <div class="notice_list">
     <h2 class="notice">공지사항</h2>
     <p>전체 <?php echo $total; ?>개</p>
     <table class="notice_list_set">
@@ -77,6 +84,7 @@ if($e_pageNum > $total_page){
             <th class="w_date">날짜</th>
             <th class="cnt">조회수</th>
         </tr>
+    </div>  
         <?php
             // paging : 해당 페이지의 글 시작 번호 = (현재 페이지 번호 - 1) * 페이지 당 보여질 목록 수
             $start = ($page - 1) * $list_num;

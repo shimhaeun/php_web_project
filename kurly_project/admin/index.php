@@ -40,6 +40,6 @@ if($s_id != "admin"){
 </div>
 <hr>
 <!-- content -->
-admin page
+관리자 페이지입니다.
 </body>
 </html>

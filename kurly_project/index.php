@@ -8,11 +8,12 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=**Nanum+Gothic+Coding:wght@700**&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/main.css">
-<!-- <link rel="styleSheet" href="css/main2.css"> -->
-<!-- <link rel="styleSheet" href="css/normalize.css"> -->
+<!-- <link rel="styleSheet" href="../css/main2.css"> -->
+<link rel="styleSheet" href="css/normalize.css">
 <!-- <link rel="styleSheet" href="css/index.css"> -->
+<link rel="stylesheet" href="css/sub_header.css">
 <link href="/css/flexnav.css" media="screen, projection" rel="stylesheet" type="text/css">
-<!-- <script src="/js/jquery.flexnav.js" type="text/javascript"></script> -->
+<script src="/js/jquery.flexnav.js" type="text/javascript"></script>
 </head> 
 <body>
 <script type="text/javascript" src="/js/jquery-3.6.1.min.js"></script>
@@ -47,13 +48,13 @@
 		</div>
 	</div>
 </section>	<!-- end of #main-slide-->
-
-<div class="product-list">
+ 
+ <div class="product-list">
 	<h2 class="title-goods">이 상품 어때요?</h2>
 	<div class="product-list-inner">
-		<div class="box"><div><a href="#"><img src="img/goods13.png"></a></div>
+		<div class="box"><div><a href="../goods/spec.html"><a href="../goods/spec.html" img src="http://localhost/kurly_project/img/cheeseimg.png"></a></div>
 			<div class="txt">
-				<p><a href="#">MY FIRST 처음 만나는 진짜 식빵</a></p>
+				<p><a href="#">[벨지오이오소] 부라타 치즈</a></p>
 				<p><span class="price">4,900원</span></p>
 			</div>
 		</div>
@@ -79,6 +80,18 @@
 		</div>
 	</div>
 </div>
+<!-- <div class="list_goods">
+	<div class="bx-wrapper" style="max-width: 1050px; margin: 0px auto;">
+		<div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 506px;">
+			<ul data-title="이 상품 어때요?" data-section="today_recommendation" class="list" style="width: 2215%; position: relative; transition-duration: 0s; transform: translate3d(0px, 0px, 0px);">
+				<li data-index="1" class="" data-name="today_recommendation" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;"><a class="thumb_goods" href="../../../goods/spec.html"> <img src="https://img-cf.kurly.com/shop/data/goods/1600999994477l0.jpg" alt="상품이미지" class="thumb" style="background-image: url('https://img-cf.kurly.com/shop/data/goods/1600999994477l0.jpg');"></a> <div class="info_goods"><span class="name"><a class="txt">[Kurly's] 국산콩 두부 300g</a></span> <span class="price"><span class="orange">15%</span>1,615원                            </span> <span class="price">1,900원</span></div></li>
+				<li data-index="2" class="" data-name="today_recommendation" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;"><a class="thumb_goods"> <img src="https://img-cf.kurly.com/shop/data/goods/1470792458150l0.jpg" alt="상품이미지" class="thumb" style="background-image: url('https://img-cf.kurly.com/shop/data/goods/1470792458150l0.jpg');"></a> <div class="info_goods"><span class="name"><a class="txt">무농약 고추 5종</a></span> <span class="price"><span class="dc">12%</span>1,496원                            </span> <span class="cost">1,700원</span></div></li>
+				<li data-index="3" class="cut" data-name="today_recommendation" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;"><a class="thumb_goods"> <img src="https://img-cf.kurly.com/shop/data/goods/1618982721607l0.jpg" alt="상품이미지" class="thumb" style="background-image: url('https://img-cf.kurly.com/shop/data/goods/1618982721607l0.jpg');"></a> <div class="info_goods"><span class="name"><a class="txt">[김재식헬스푸드] 순수석류즙 80ml 21팩</a></span> <span class="price"><span class="dc">10%</span>32,310원                            </span> <span class="cost">35,900원</span></div></li>
+				<li data-index="4" class="" data-name="today_recommendation" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;"><a class="thumb_goods"> <img src="https://img-cf.kurly.com/shop/data/goods/1499651211513l0.jpg" alt="상품이미지" class="thumb" style="background-image: url('https://img-cf.kurly.com/shop/data/goods/1499651211513l0.jpg');"></a> <div class="info_goods"><span class="name"><a class="txt">[콜리오스] 페타 치즈</a></span> <span class="price"><span class="dc">10%</span>5,940원                            </span> <span class="cost">6,600원</span></div></li>
+			</ul>
+		</div>
+	</div>
+	</div>  -->
 
 <div class="main-special">
 	<div class="main-special-inner">
@@ -94,13 +107,13 @@
 			<div class="time">망설이면 늦어요!</div>
 			</div>
 				<br>
-			<p style="font-size: small;">10월, 한 달간 진행되는 24시간 한정 특가</p>
+			<p style="font-size: small;">11월, 한 달간 진행! 24시간 한정 특가</p>
 		</p><br><br>
 		</div>
 		<div class="special-box">
 			<div class="purple-box">
 				<div class="event30">
-					++다다익선쿠폰
+					
 				</div>
 				<div><a href="#"><img src="img/spp.gif"></a></div>
 			</div>

@@ -8,6 +8,9 @@ h3 {
 .tit_login {
     margin: auto;
     position: relative;
+    background: url(img/loginlogo.jpg);
+    width: 340px;
+    height: 100px;
 }
 #content{
     border-bottom: 1px solid var(--semi-white);
@@ -30,13 +33,14 @@ h3 {
 }
 
 .section_login .tit_login {
-    background: url(/img/loginlogo.jpg) no-repeat center;
+    background: url(../img/loginlogo.jpg) no-repeat center;
     text-indent: -9999px;
     font-weight: 800;
     line-height: 20px;
     text-align: center;
     margin: 0 auto;
     position: relative;
+    z-index: 1;
   }
   
   .section_login .login_box {

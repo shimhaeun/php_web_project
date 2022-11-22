@@ -116,9 +116,9 @@
 #qnb .bnr_qnb .thumb{width:80px;height:120px;vertical-align:top}
 /* 메뉴 */    
 #qnb .side_menu{width:80px;border:1px solid #ddd;border-top:0 none;background-color:#fff}
-#qnb .link_menu{display:block;height:29px;padding-top:5px;border-top:1px solid #ddd;text-align:center}
+#qnb .link_menu{display:block;height:30px;padding-top:10px;padding-bottom:10px;border-top:1px solid #ddd;text-align:right}
 #qnb .link_menu:hover,
-#qnb .link_menu.on{color:#5f0080}
+#qnb .link_menu.on{color:green}
 
 /* override */
 #content{padding-bottom:0}

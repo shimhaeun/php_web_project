@@ -1,0 +1,100 @@
+/* Effective stylesheet produced by snapshot save */
+.txt_sub.text_medium { color: rgb(153, 153, 153); }
+.txt_sub.kurlyPurple { color: rgb(95, 0, 128); }
+body { background-color: rgb(255, 255, 255); }
+.noBody, body {  }
+input[type="radio"]:checked + .ico::after { content: ""; position: absolute; left: 50%; top: 50%; width: 10px; height: 10px; margin: -5px 0px 0px -5px; border-radius: 100%; background-color: rgb(255, 255, 255); }
+.skin_checkbox input[type="radio"]:checked + .ico::after { background-color: transparent; }
+.select_box .tit_selected.off::after { background-image: url("urn:not-loaded:https://res.kurly.com/mobile/service/common/2003/ico_drop_up_disabled.png"); transform: rotate(0deg); }
+.select_box .tit_selected.off::after, .select_box .tit_selected::after { background-color: transparent; background-repeat: no-repeat; background-size: 50px 50px; background-position: 50% 50%; }
+.select_box .tit_selected::after { content: ""; position: absolute; right: 1px; top: 1px; width: 48px; height: 48px; background-image: url("urn:not-loaded:https://res.kurly.com/mobile/service/common/2003/ico_drop_up.png"); transform: rotate(-180deg); }
+.screen_out { display: block; left: -9999px; font-size: 0px; line-height: 0; text-indent: -9999px; }
+.btn { width: 100%; height: 48px; border: 0px none; border-radius: 4px; font-weight: 600; font-size: 16px; line-height: 50px; text-align: center; outline: medium none; }
+.btn.default { border: 1px solid rgb(95, 0, 128); background-color: rgb(255, 255, 255); color: rgb(95, 0, 128); }
+.btn.active { border: 1px solid rgb(95, 0, 129); background-color: rgb(95, 0, 128); color: rgb(255, 255, 255); }
+.btn.disabled, .btn:disabled { background-color: rgb(221, 221, 221); color: rgb(255, 255, 255); cursor: default; }
+.double { display: flex; }
+.double .btn { margin-left: 4px; }
+.double .btn:first-child { margin-left: 0px; margin-right: 4px; }
+.layer_kurly::before { content: ""; position: fixed; left: 0px; top: 0px; width: 100%; height: 100%; background-color: rgb(0, 0, 0); opacity: 0.6; }
+.layer_kurly.no_scroll .layer_body::after { display: none; }
+.layer_kurly .layer_body::after { content: ""; position: absolute; left: 0px; bottom: 80px; width: 100%; height: 24px; background: transparent linear-gradient(180deg, rgb(255, 255, 255, 0), rgb(255, 255, 255)) repeat scroll 0% 0%; pointer-events: none; }
+.list_policy li::before { position: absolute; width: 3px; height: 3px; margin: 7px 8px 0px -11px; background: rgb(204, 204, 204) none repeat scroll 0% 0%; vertical-align: top; content: ""; }
+.list_policy.type_black li::before { background: rgb(51, 51, 51) none repeat scroll 0% 0%; }
+@font-face {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("NotoSansKR-Regular.woff2.xpi") format("woff2"), url("urn:not-loaded:https://res.kurly.com/fonts/NotoSansKR-Regular.woff") format("woff"), url("urn:not-loaded:https://res.kurly.com/fonts/NotoSansKR-Regular.otf") format("truetype");
+}
+@font-face {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 200;
+  src: url("NotoSansKR-Light.woff2.xpi") format("woff2"), url("urn:not-loaded:https://res.kurly.com/fonts/NotoSansKR-Light.woff") format("woff"), url("urn:not-loaded:https://res.kurly.com/fonts/NotoSansKR-Light.otf") format("truetype");
+}
+@font-face {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("NotoSansKR-Medium.woff2.xpi") format("woff2"), url("urn:not-loaded:https://res.kurly.com/fonts/NotoSansKR-Medium.woff") format("woff"), url("urn:not-loaded:https://res.kurly.com/fonts/NotoSansKR-Medium.otf") format("truetype");
+}
+@font-face {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 800;
+  src: url("NotoSansKR-Bold.woff2.xpi") format("woff2"), url("urn:not-loaded:https://res.kurly.com/fonts/NotoSansKR-Bold.woff") format("woff"), url("urn:not-loaded:https://res.kurly.com/fonts/NotoSansKR-Bold.otf") format("truetype");
+}
+.list-description { font-family: Noto Sans; font-size: 14px; line-height: 24px; font-weight: 400; color: rgb(153, 153, 153); }
+.list-description li { padding-left: 12px; }
+.list-description li::before { display: inline-block; width: 2px; height: 2px; margin: 11px 6px 0px -10px; background: rgb(153, 153, 153) none repeat scroll 0% 0%; vertical-align: top; content: ""; }
+.list-description a { font-weight: 700; color: rgb(153, 153, 153); text-decoration: underline; }
+.paging-navigation { padding-top: 20px; text-align: center; }
+.paging-navigation > button { display: inline-block; width: 44px; height: 44px; padding: 0px; margin: 0px; background: transparent none repeat scroll 0px center; border: 1px solid rgb(238, 238, 238); border-radius: 3px; cursor: pointer; }
+.paging-navigation > button:hover { border-color: rgb(51, 51, 51); }
+.paging-navigation > button:disabled { border-color: rgb(238, 238, 238); cursor: default; }
+.paging-navigation > button.paging-next:disabled { background-image: url("direction_next_disabled_24_44_gray.svg"); }
+.paging-navigation > button.paging-prev:disabled { margin-right: 12px; background-image: url("direction_prev_disabled_24_44_gray.svg"); }
+.paging-navigation > button span { overflow: hidden; position: absolute; width: 1px; height: 1px; clip: rect(0px, 0px, 0px, 0px); }
+.paging-navigation > button.paging-next { background: transparent url("direction_next_24_44_black.svg") no-repeat scroll 50% 0px; }
+.paging-navigation > button.paging-prev { margin-right: 12px; background: transparent url("urn:not-loaded:https://res.kurly.com/kurly/img/2021/direction_prev_24_44_black.svg") no-repeat scroll 50% 0px; }
+.inquiry-modal .modal-body .inquiry-form .inquiry-row .input-placeholder ul li::before { overflow: hidden; display: inline-block; width: 2px; height: 2px; border-radius: 50%; background: rgb(153, 153, 153) none repeat scroll 0% 0%; margin: 8px 7px 0px -9px; content: ""; vertical-align: top; }
+.board-container { height: 100%; }
+.board-header-container { padding-bottom: 38px; font-family: Noto Sans; }
+.board-header-container strong { display: block; padding-bottom: 16px; font-size: 16px; font-weight: 700; line-height: 24px; color: rgb(51, 51, 51); }
+.board-item-container { position: relative; font-family: Noto Sans; border-top: 2px solid rgb(51, 51, 51); }
+.board-item-container .inquiry-board-header { display: table; table-layout: fixed; border-bottom: 1px solid rgb(51, 51, 51); }
+.board-item-container .inquiry-board-header > div { display: table-cell; text-align: center; padding: 18px 0px 20px; width: 100px; font-family: Noto Sans; font-size: 14px; line-height: 20px; font-weight: 700; letter-spacing: -0.5px; color: rgb(51, 51, 51); }
+.board-item-container.my_kurly > li .item-cell:nth-child(2) { width: 520px; padding: 9px 20px 0px 0px; box-sizing: border-box; vertical-align: top; }
+.board-item-container.my_kurly .inquiry-board-header div:nth-child(2) { padding-right: 20px; box-sizing: border-box; }
+.board-item-container.product { width: 1010px; }
+.board-item-container.product .board-list > li, .board-item-container.product .inquiry-notice-list > li { padding: 19px 0px; }
+.board-item-container.product .board-list > li .notice-cell, .board-item-container.product .board-list > li > div.inquiry-item:first-child, .board-item-container.product .inquiry-notice-list > li .notice-cell, .board-item-container.product .inquiry-notice-list > li > div.inquiry-item:first-child { width: 710px; text-align: left; padding: 0px 20px; min-height: 22px; box-sizing: border-box; }
+.board-item-container.product .board-list > li .product-detail, .board-item-container.product .inquiry-notice-list > li .product-detail { min-height: 22px; padding: 0px 0px 0px 20px; }
+.board-item-container.product .board-list > li .product-detail.is-secret + .icon-secret, .board-item-container.product .board-list > li .product-detail.is-secret .icon-secret, .board-item-container.product .inquiry-notice-list > li .product-detail.is-secret + .icon-secret, .board-item-container.product .inquiry-notice-list > li .product-detail.is-secret .icon-secret { background-image: url("secret_12_14_gray_pc.svg"); }
+.board-item-container.product .board-list > li .product-detail strong, .board-item-container.product .inquiry-notice-list > li .product-detail strong { max-width: 640px; vertical-align: top; font-weight: 400; }
+.board-item-container.product .board-list > li .notice-cell span, .board-item-container.product .inquiry-notice-list > li .notice-cell span { display: inline-block; overflow: hidden; border-radius: 4px; margin-right: 12px; padding: 0px 8px; font-size: 12px; line-height: 22px; font-weight: 500; color: rgb(102, 102, 102); background: rgb(102, 102, 102, 0.06) none repeat scroll 0% 0%; vertical-align: top; }
+.board-item-container.product .board-list > li .notice-cell strong, .board-item-container.product .inquiry-notice-list > li .notice-cell strong { display: inline-block; overflow: hidden; max-width: 613px; font-size: 14px; font-weight: 400; line-height: 24px; color: rgb(51, 51, 51); white-space: nowrap; text-overflow: ellipsis; vertical-align: top; }
+.board-item-container.product .board-list > li .icon-secret, .board-item-container.product .inquiry-notice-list > li .icon-secret { margin-top: 4px; }
+.board-item-container .board-list, .board-item-container .inquiry-notice-list { position: relative; }
+.board-item-container .board-list > li, .board-item-container .inquiry-notice-list > li { display: table; width: 100%; table-layout: fixed; padding: 16px 0px; font-family: Noto Sans; font-size: 14px; line-height: 20px; text-align: center; cursor: pointer; border-bottom: 1px solid rgb(244, 244, 244); }
+.board-item-container .board-list > li .product-detail, .board-item-container .inquiry-notice-list > li .product-detail { min-height: 44px; text-align: left; padding: 8px 20px 0px 0px; font-weight: 400; box-sizing: border-box; vertical-align: top; }
+.board-item-container .board-list > li .product-detail.is-secret, .board-item-container .inquiry-notice-list > li .product-detail.is-secret { cursor: default; }
+.board-item-container .board-list > li .product-detail.is-secret strong, .board-item-container .inquiry-notice-list > li .product-detail.is-secret strong { color: rgb(181, 181, 181); }
+.board-item-container .board-list > li .product-detail .product-name, .board-item-container .board-list > li .product-detail strong, .board-item-container .inquiry-notice-list > li .product-detail .product-name, .board-item-container .inquiry-notice-list > li .product-detail strong { display: block; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+.board-item-container .board-list > li .product-detail strong, .board-item-container .inquiry-notice-list > li .product-detail strong { display: inline-block; max-width: 500px; font-size: 14px; line-height: 22px; color: rgb(51, 51, 51); }
+.board-item-container .board-list > li .item-cell, .board-item-container .inquiry-notice-list > li .item-cell { display: table-cell; vertical-align: middle; width: 100px; }
+.board-item-container .board-list > li.inquiry-item-expand .expand-question .inquiry-content-footer button + button::before, .board-item-container .inquiry-notice-list > li.inquiry-item-expand .expand-question .inquiry-content-footer button + button::before { position: absolute; top: 5px; left: 0px; width: 1px; height: 12px; background: rgb(238, 238, 238) none repeat scroll 0% 0%; vertical-align: top; content: ""; }
+.board-item-container .board-list > li.loading .frame-img::after, .board-item-container .board-list > li.loading .notice-cell *::after, .board-item-container .board-list > li.loading .product-detail *::after, .board-item-container .board-list > li.loading .txt_sub::after, .board-item-container .inquiry-notice-list > li.loading .frame-img::after, .board-item-container .inquiry-notice-list > li.loading .notice-cell *::after, .board-item-container .inquiry-notice-list > li.loading .product-detail *::after, .board-item-container .inquiry-notice-list > li.loading .txt_sub::after { position: absolute; top: 0px; right: 0px; bottom: 0px; left: 0px; transform: translateX(-100%); background-image: linear-gradient(90deg, rgb(255, 255, 255, 0), rgb(255, 255, 255, 0.5) 60%, rgb(255, 255, 255, 0)); animation: 2s ease 0s normal none infinite running shimmer; content: ""; }
+.board-item-container .board-list > li.inquiry-error::before, .board-item-container .inquiry-notice-list > li.inquiry-error::before { display: block; margin: 138px auto 16px; width: 48px; height: 48px; background: transparent url("urn:not-loaded:https://res.kurly.com/kurly/img/2021/error_48_48_gray.svg") no-repeat scroll 0px 0px; content: ""; }
+.board-inquiry-area { position: relative; }
+.board-inquiry-area .btn { position: absolute; bottom: 0px; right: 0px; width: 120px; height: 44px; font-family: Noto Sans; font-weight: 500; line-height: 1; }
+.board-inquiry-area .btn span { display: inline-block; font-size: 14px; vertical-align: top; }
+.screen_out { overflow: hidden; position: absolute; width: 1px; height: 1px; clip: rect(0px, 0px, 0px, 0px); }
+.icon-secret { display: inline-block; position: relative; width: 12px; height: 14px; background: transparent url("urn:not-loaded:https://res.kurly.com/kurly/ico/2021/secret_12_14_black.svg") no-repeat scroll 0px 0px; margin: 2px 0px 0px 6px; vertical-align: top; }
+@keyframes shimmer {
+  100% { transform: translateX(100%); }
+}
+@keyframes shimmer {
+  100% { transform: translateX(100%); }
+}

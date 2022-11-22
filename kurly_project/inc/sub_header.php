@@ -11,50 +11,17 @@
     <link rel="stylesheet" href="../../css/main.css">
     <link rel="stylesheet" href="../../css/sub_header.css">
     <link rel="stylesheet" type="text/css" href="../css/dropdown.css">
-    <script type="text/javascript" src="../js/jquery-3.6.1.min.js"></script>
-    <script type="text/javascript" src="../js/jquery.flexnav.min.js"></script>
+    
     <script type="text/javascript" src="[//use.typekit.net/qyb8ood.js](https://use.typekit.net/qyb8ood.js)"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@700&display=swap" rel="stylesheet">
     <script src="../js/dropdown.js"></script>
 </head>
 <body>
     
-<div class="header-bottom">
-    <div id="userMenu">
-        <!-- <div class="delivery"><img src="img/delivery_190819.webp"></div> -->
-    <div class="gnb1">
-        <ul>
-            <?php if(!$s_id){ ?>
-                <!-- 로그인 전 -->
-            <li class="menu_join"><a href="members/join.php" class="link_menu">회원가입</a></li>
-            <li class="menu_login"><a href="login/login.php">로그인</a></li>
-            <li class="site-name"><a href="#"></a></li>
-            <?php } else if($s_id == "admin" ){ ?>
-                <!-- 관리자 로그인 -->
-                <a href="../admin/index.php">관리자 페이지</a>
-                <a href="../login/logout.php">로그아웃</a>
-                <a href="../members/member_info.php">내정보</a>
-                <?php } else { ?>
-                <!-- 로그인 후 -->
-                <span class="pnt_name"><?php echo $s_name; ?>님, 안녕하세요. </span>
-                <a href="../login/logout.php">로그아웃</a>
-                <a href="../members/member_info.php">내정보</a>
-                <?php } ?>
-                <ul id="nav">
-            <li class="menu lst"><a href="#" class="link_menu">고객센터</a>
-                <ul>
-                    <li><a href="notice/list.php">공지사항</a></li>
-                    <li><a href="notice/qna.php">자주하는질문</a></li>
-                    <li><a href="notice/otoinquiry.php">1:1 문의</a></li>
-                    <li><a href="notice/bulkorder.php">대량주문 문의</a></li>
-                </ul>
-            </li>
-            </ul>
-        </ul>
-    </div>
-</div>
+
 <div id="headerLogo">
     <div class="logo">
-        <a href="#top"><img src="../img/logo.jpg"></a>
+        <a href="#top"><img src="http://localhost/kurly_project/img/logo.jpg"></a>
         <div class="logogroup">
             <div class="mkklogo" style="cursor: pointer; font-size: 18px;">
                 <a href="http://localhost/kurly_project" style="color: white;">
@@ -68,10 +35,32 @@
     </div>
 </div>
 
-<div class="search">
-<input type="text" placeholder="빵빵한 라인업 온라인 빵지순례!"><a href="#"><img src="img/search_icon.png" class="sch"></a></input>
-<img src="img/heart.png" class="deli" style="cursor: pointer;"><img src="img/cart_icon.png" class="cart" style="cursor: pointer;">
-</div>
+<!-- <div class="search"> -->
+<!-- <input type="text" placeholder="빵빵한 라인업 온라인 빵지순례!"><a href="#"><img src="http://localhost/kurly_project/img/ico_search_x2.png" class="sch"></a></input>
+<img src="http://localhost/kurly_project/img/heart.png" class="deli" style="cursor: pointer;"><img src="http://localhost/kurly_project/img/cart_icon.png" class="cart" style="cursor: pointer;"> -->
+<!-- </div>  -->
+<div id="userMenu">
+                        <ul class="list_menu">
+                            <li class="menu none_sub menu_join">
+                                <a href="members/join.php" class="link_menu">회원가입</a>
+                            </li>
+                            <li class="menu none_sub menu_login">
+                                <a href="login/login.php" class="link_menu">로그인</a>
+                            </li>
+                            <ul id="nav">
+                            <li class="menu lst">
+                                <a href="https://www.kurly.com/shop/board/list.php?id=notice" class="link_menu">고객센터</a>
+                                <ul>
+                                    <li><a href="notice/list.php">공지사항</a></li>
+                                    <li><a href="notice/qna.php">자주하는질문</a></li>
+                                    <li><a href="notice/otoinquiry.php">1:1 문의</a></li>
+                                    <li><a href="notice/bulkorder.php">대량주문 문의</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </ul>
+                    </div>
+
 <!-- <div id="gnbMenu-cover"> -->
 <!-- <div id="gnbMenu"> -->
     <!-- <div class="gnb2"> -->
@@ -344,5 +333,29 @@
     <li class="twitter"><a href="#">알뜰쇼핑</a></li>
     <li class="twitter"><a href="#">특가/혜택</a></li>
 </ul>
-        <!-- category menu -->
+<div id="side_search" class="gnb_search">
+    <form action="https://www.kurly.com/shop/goods/goods_search.php?&">
+        <input type="hidden" name="searched" value="Y">
+        <input type="hidden" name="log" value="1">
+        <input type="hidden" name="skey" value="all">
+        <input type="hidden" name="hid_pr_text" value>
+        <input type="hidden" name="hid_link_url" value>
+        <input type="hidden" id="edit" name="edit" value>
+        <!-- <input name="sword" type="text" id value required="required" label="검색어" class="inp_search">
+        <input type="image" src="https://res.kurly.com/pc/service/common/1908/ico_search_x2.png" class="btn_search"> -->
+    </form>
+</div>
+<div class="search">
+<input type="text" placeholder="빵빵한 라인업 온라인 빵지순례!"><a href="#"><img src="http://localhost/kurly_project/img/search_icon.png" class="sch"></a></input>
+<img src="http://localhost/kurly_project/img/heart.png" class="deli" style="cursor: pointer;"><img src="http://localhost/kurly_project/img/cart_icon.png" class="cart" style="cursor: pointer;">
+</div>
+<!-- <div class="cart_count">
+    <div class="inner_cartcount">
+        <a href="https://www.kurly.com/shop/goods/goods_cart.php" class="btn_cart">
+            <span class="screen_out">장바구니</span>
+            <span id="cart_item_count" class="nu realtime_cartcount" style="display: none;"></span>
+        </a>
+    </div>
+</div> -->
+<!-- category menu -->
     </div>

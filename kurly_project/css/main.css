@@ -10,12 +10,12 @@ ul{
 }
 a{
 	text-decoration:none;
-	display:block;
+	display: inline-table;
 	color:#000;
 }
 
 header{
-	margin-bottom:-40px;
+	margin-bottom:-100px;
 	width:100%;
 	height:198px;
 	-background-color:beige;
@@ -61,7 +61,7 @@ header{
 	-background-color:skyblue;
 	margin:auto;
 }
-#userMenu{
+#userMenuu{
 	width:1050px;
 	margin:auto;
 	height:37px;
@@ -98,7 +98,7 @@ header{
 
 /* 로고 */
 #headerLogo{
-	height:100px;
+	height:130px;
 	margin:auto;
 	width:1200px;
 	background-color:rgb(228, 226, 227);
@@ -139,11 +139,12 @@ header{
 	color: white;
 	background-color: green;
 	width: 80px;
+	height: 80px;
 	border: solid green;
 	border-radius: 15px;
 	float: left;
 	text-align: center;
-	font-size: 18px;
+	font-size: 15px;
 }
 .btklogo {
 	width: 80px;
@@ -173,7 +174,7 @@ header{
 #gnbMenu{
 	width:1200px;
 	height:46px;
-	background-color:red;
+	-background-color:red;
 	margin:auto;
 }
 .gnb2{
@@ -326,7 +327,7 @@ header{
 /* 검색창 */
 .search{
 	display: block;
-	width:325px;
+	width:1050px;
 	height:55px;
 	line-height:55px;
 	-text-align:center;
@@ -344,8 +345,19 @@ header{
 	padding:15px;
 	font-size:12px;
 	border:1px solid;
+	float: right;
 }
-
+#gnb .gnb_search{position:absolute;right:108px;top:10px;width:242px}
+#gnb .gnb_search .inp_search{width:242px;height:36px;padding:0 60px 0 14px;border:1px solid #f7f7f6;border-radius:18px;background-color:#f7f7f7;font-family: 'Noto Sans';font-weight:400;font-size:12px;color:#666;line-height:16px;outline:none}
+#gnb .gnb_search .inp_search.focus{background-color:#fff;color:#333}
+#gnb .gnb_search .btn_search{position:absolute;right:5px;top:3px;width:30px;height:30px}
+#gnb .cart_count{position:absolute;right:-5px;top:10px}
+#gnb .cart_count .inner_cartcount{text-align:center;font-weight:400}
+#gnb .cart_count .btn_cart{display:block;width:36px;height:36px;background:url(https://res.kurly.com/pc/service/common/2011/ico_cart.svg) no-repeat 50% 50%}
+#gnb .cart_count .btn_cart:hover{background:url(https://res.kurly.com/pc/service/common/2011/ico_cart_on.svg?v=1) no-repeat 50% 50%}
+#gnb .cart_count .num{display:none;position:absolute;left:19px;top:-1px;min-width:20px;height:20px;padding:0 5px;border:2px solid #fff;border-radius:10px;background-color:#5f0080;font-size:9px;color:#fff;line-height:15px;text-align:center;white-space:nowrap}
+#gnb .cart_count img{display:block;width:36px;height:36px;margin:0 auto}
+#gnb .layer_location .emph{color:green}
 .sch{
 	width: 30px;
 	height:30px;
@@ -533,7 +545,6 @@ del{
 	font-weight:bold;
 	font-size:20px;
 }
-.24hour 
 .event30{
 	position:absolute;
 	background-color:green;
