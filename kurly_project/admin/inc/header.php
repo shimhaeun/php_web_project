@@ -1,21 +1,35 @@
-<?php include "../inc/session.php" ?>
-<!DOCTYPE html>
+<?php include "inc/session.php" ?>
+
+<!doctype html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="../css/sr1.css">
-    <link rel="stylesheet" type="text/css" href="../css/my.css">
-    <link rel="stylesheet" type="text/css" href="../css/normalize.css">
-    <link rel="stylesheet" href="../../css/main.css">
-    <link rel="stylesheet" href="../../css/sub_header.css">
-    <link rel="stylesheet" type="text/css" href="../css/dropdown.css">
-    
-    <script type="text/javascript" src="[//use.typekit.net/qyb8ood.js](https://use.typekit.net/qyb8ood.js)"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@700&display=swap" rel="stylesheet">
-    <script src="../js/dropdown.js"></script>
+<meta charset="UTF-8">
+<title>마켓컬리 :: 내일의 장보기</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=**Nanum+Gothic+Coding:wght@700**&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/main.css">
+<!-- <link rel="styleSheet" href="../css/main2.css"> -->
+<link rel="styleSheet" href="css/normalize.css">
+<!-- <link rel="styleSheet" href="css/index.css"> -->
+<link rel="stylesheet" href="css/sub_header.css">
+<link href="/css/flexnav.css" media="screen, projection" rel="stylesheet" type="text/css">
+<script src="/js/jquery.flexnav.js" type="text/javascript"></script>
+</head> 
+<body>
+<script type="text/javascript" src="/js/jquery-3.6.1.min.js"></script>
+<link rel="stylesheet" href="css/jquery.bxslider.css">
+<script src="http://code.jquery.com/jquery-1.9.0.js" type="text/javascript"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.flexnav.min.js"></script>
+<script src="js/jquery.bxslider.js"></script>
+<link rel="stylesheet" type="text/css" href="css/dropdown.css">
+<script type="text/javascript" src="js/jquery.flexnav.min.js"></script>
+<script type="text/javascript" src="//use.typekit.net/qyb8ood.js"></script>
+<script src="/js/timer.js"></script>
+<script src="js/bxslider.js"></script>
+<!-- <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script> -->
+<script src="js/dropdown.js"></script>
 </head>
 <body>
     
@@ -40,46 +54,34 @@
 <!-- <input type="text" placeholder="빵빵한 라인업 온라인 빵지순례!"><a href="#"><img src="http://localhost/kurly_project/img/ico_search_x2.png" class="sch"></a></input>
 <img src="http://localhost/kurly_project/img/heart.png" class="deli" style="cursor: pointer;"><img src="http://localhost/kurly_project/img/cart_icon.png" class="cart" style="cursor: pointer;"> -->
 <!-- </div>  -->
-<!-- <div id="userMenu">
+<div id="userMenu">
+    <?php if(!$s_idx){ ?>
     <ul class="list_menu">
-        <li class="menu none_sub menu_join">
+        <li class="menu none_sub menu_join" style="list-style:none;">
             <a href="members/join.php" class="link_menu">회원가입</a>
         </li>
-        <li class="menu none_sub menu_login">
+        <li class="menu none_sub menu_login" style="list-style:none;">
             <a href="login/login.php" class="link_menu">로그인</a>
         </li>
-        <ul id="nav">
-        <li class="menu lst">
-            <a href="https://www.kurly.com/shop/board/list.php?id=notice" class="link_menu">고객센터</a>
-            <ul>
-                <li><a href="../notice/list.php">공지사항</a></li>
-                <li><a href="../notice/qna.php">자주하는질문</a></li>
-                <li><a href="../notice/otoinquiry.php">1:1 문의</a></li>
-                <li><a href="../notice/bulkorder.php">대량주문 문의</a></li>
-            </ul>
-        </li>
     </ul>
-        <li class="menu none_sub menu_login">
-            <a href="login/login.php" class="link_menu">로그인</a>
-        </li>
-        
-        <li class="menu none_sub menu_login">
-            <a href="login/logout.php" class="link_menu">관리자 페이지</a>
-        </li>
-        <ul id="nav">
-        <li class="menu lst">
-            <a href="https://www.kurly.com/shop/board/list.php?id=notice" class="link_menu">고객센터</a>
-            <ul>
-                <li><a href="notice/list.php">공지사항</a></li>
-                <li><a href="notice/qna.php">자주하는질문</a></li>
-                <li><a href="notice/otoinquiry.php">1:1 문의</a></li>
-                <li><a href="notice/bulkorder.php">대량주문 문의</a></li>
-            </ul>
-        </li>
-    </ul>
-        <li class="menu none_sub menu_login">
+    <?php } else if($s_id == "admin"){ ?>
+        <li class="menu none_sub menu_login" style="list-style:none;">
             <a href="login/logout.php" class="link_menu">로그아웃</a>
-            <li class="menu lst">
+        </li>
+        <li class="menu none_sub menu_login">
+            <a href="admin/index.php" class="link_menu">관리자</a>
+        </li>
+    </ul>
+    <?php } else{ ?>
+        <li class="menu none_sub menu_login" style="list-style:none;">
+            <a href="login/logout.php" class="link_menu">로그아웃</a>
+        </li>
+        <li class="menu none_sub menu_login">
+            <a href="login/logout.php" class="link_menu">내 정보</a>
+        </li>
+    <?php }; ?>
+        <div class="nav">
+        <li class="menu lst">
                 <a href="https://www.kurly.com/shop/board/list.php?id=notice" class="link_menu">고객센터</a>
                 <ul>
                     <li><a href="notice/list.php">공지사항</a></li>
@@ -87,10 +89,10 @@
                     <li><a href="notice/otoinquiry.php">1:1 문의</a></li>
                     <li><a href="notice/bulkorder.php">대량주문 문의</a></li>
                 </ul>
-            </li>
         </li>
+        </div>
 </ul>
-</div> -->
+</div>
 
 <!-- <div id="gnbMenu-cover"> -->
 <!-- <div id="gnbMenu"> -->

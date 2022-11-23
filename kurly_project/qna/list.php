@@ -5,7 +5,7 @@
 include "../inc/dbcon.php";
 
 // 쿼리 작성
-$sql = "select * from notice;";
+$sql = "select * from qna;";
 
 // 쿼리 전송
 $result = mysqli_query($dbcon, $sql);
@@ -53,69 +53,29 @@ if($e_pageNum > $total_page){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>공지사항</title>
-    <link rel="stylesheet" href="../../css/main.css">
-    <link rel="stylesheet" href="../../css/board.css">
-    <link rel="stylesheet" type="text/css" href="../../css/dropdown.css">
-    <script type="text/javascript" src="../../js/jquery-3.6.1.min.js"></script>
-    <script type="text/javascript" src="../../js/jquery.flexnav.min.js"></script>
-    <script type="text/javascript" src="//use.typekit.net/qyb8ood.js"></script>
-    <script src="../../js/dropdown.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>자주 묻는 질문</title>
+    <link rel="stylesheet" type="text/css" href="../css/dropdown.css">
+    <!-- <link rel="stylesheet" type="text/css" href="../css/main.css"> -->
+    <link rel="stylesheet" type="text/css" href="../css/board.css">
+    <link rel="styleSheet" href="../css/main.css">
+        <link rel="styleSheet" href="../css/normalize.css">
+        <!-- <link rel="styleSheet" href="../css/index.css"> -->
+        <script type="text/javascript" src="../../js/jquery-3.6.1.min.js"></script>
+        <script type="text/javascript" src="../js/jquery.flexnav.min.js"></script>    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        body{font-size:20px;font-family: 'Nanum Gothic Coding', monospace;}
-        a{text-decoration:none;margin:0 5px}
-
-        table, td{
-            border-collapse:collapse;
-        }
-        th, td, .pager{
-            padding:15px;
-            text-align:center;
-        }
-        .notice_list_set, .pager{
-            width:860px;
-        }
-        .notice_list_title{
-            border-top:2px solid #999;
-            border-bottom:1px solid #999;
-        }
-        .notice_list_content{
-            border-bottom:1px solid #999;
-        }
-        .no{width:60px}
-        .n_title{width:500px}
-        .writer{width:100px}
-        .w_date{width:120px}
-        .cnt{width:80px}
-        .notice_content_title{text-align:left;padding-left:10px}
-
-        a:hover{color:rgb(255, 128, 0)}
-
-        <?php if($s_id == "admin"){ ?>
-        .write_area{
-            width:860px;
-            display:flex;
-            justify-content:space-between
-        }
-        <?php }; ?>
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@700&display=swap" rel="stylesheet">
+    <header>
+        <?php include "../inc/sub_header.php"; ?>
+    </header>
 </head>
+
 <body>
-    <?php include "../../inc/sub_header.php"; ?>
     <!-- 콘텐트 -->
+    <div>
+    </div>
     <div class="notice_list">
-    <h2>공지사항</h2>
-    <?php if($s_id == "admin"){ ?>
-    <p class="write_area">
-        <span>전체 <?php echo $total; ?>개</span>
-        <span><a href="write.php">[글쓰기]</a></span>
-    </p>
-    <?php } else{ ?>
+    <h2 class="notice">자주 묻는 질문</h2>
     <p>전체 <?php echo $total; ?>개</p>
-    <?php }; ?>
     <table class="notice_list_set">
         <tr class="notice_list_title">
             <th class="no">번호</th>
@@ -124,13 +84,14 @@ if($e_pageNum > $total_page){
             <th class="w_date">날짜</th>
             <th class="cnt">조회수</th>
         </tr>
+    </div>  
         <?php
             // paging : 해당 페이지의 글 시작 번호 = (현재 페이지 번호 - 1) * 페이지 당 보여질 목록 수
             $start = ($page - 1) * $list_num;
 
             // paging : 시작번호부터 페이지 당 보여질 목록수 만큼 데이터 구하는 쿼리 작성
             // limit 몇번부터, 몇 개
-            $sql = "select * from notice order by idx desc limit $start, $list_num;";
+            $sql = "select * from notice limit $start, $list_num;";
             // echo $sql;
             /* exit; */
 
@@ -138,9 +99,8 @@ if($e_pageNum > $total_page){
             $result = mysqli_query($dbcon, $sql);
 
             // DB에서 데이터 가져오기
-            // pager : 글번호(역순)
-            // 전체데이터 - ((현재 페이지 번호 -1) * 페이지 당 목록 수)
-            $i = $total - (($page - 1) * $list_num);
+            // pager : 글번호
+            $i = $start + 1;
             while($array = mysqli_fetch_array($result)){
         ?>
         <tr class="notice_list_content">
@@ -156,7 +116,7 @@ if($e_pageNum > $total_page){
             <td><?php echo $array["cnt"]; ?></td>
         </tr>
         <?php
-                $i--;
+                $i++;
             }; 
         ?>
     </table>
@@ -186,6 +146,5 @@ if($e_pageNum > $total_page){
     <a href="list.php?page=<?php echo ($page + 1); ?>">다음</a>
     <?php }; ?>
     </p>
-    </div>
 </body>
 </html>

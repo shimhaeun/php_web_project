@@ -34,14 +34,14 @@
     <link rel="icon" type="image/png" sizes="192x192" href="https://res.kurly.com/images/marketkurly/logo/ico_192.png">
     <link rel="icon" type="image/png" sizes="16x16" href="https://res.kurly.com/images/marketkurly/logo/ico_16.png">
 
-    <link rel="styleSheet" href="../css/main2.css">
+    <!-- <link rel="styleSheet" href="../css/main2.css"> -->
     <link rel="styleSheet" href="../css/main.css">
     <link rel="styleSheet" href="../css/normalize.css">
     <link rel="styleSheet" href="../css/index.css">
     <link rel="styleSheet" href="../css/flexnav.css">
     <link rel="styleSheet" href="../js/jquery.bxslider.css">
     <link rel="styleSheet" href="../js/sr1.css">
-    <link rel="stylesheet" type="text/css" href="../../css/dropdown.css">
+    <link rel="stylesheet" type="text/css" href="../css/dropdown.css">
     <script type="text/javascript" src="../js/jquery-3.6.1.min.js"></script>
     <script type="text/javascript" src="../js/jquery.flexnav.min.js"></script>
     <script type="text/javascript" src="//use.typekit.net/qyb8ood.js"></script>
@@ -54,7 +54,7 @@
 
     <link rel="stylesheet" href="../css/goodslist_all.css">
 </head>
-<?php include "../inc/sub_header.php" ?>
+<?php include "../inc/header.php" ?>
 <body>
                         <div calss="gnb_sub" style="display: none; width: 219px;">
                             <div class="inner_sub">

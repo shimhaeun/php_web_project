@@ -17,7 +17,7 @@
 	<div class="product-list-inner">
 		<div class="box"><div><a href="../goods/spec.html"><a href="../goods/spec.html" img src="http://localhost/kurly_project/img/cheeseimg.png"></a></div>
 			<div class="txt">
-				<p><a href="#">[벨지오이오소] 부라타 치즈</a></p>
+				<p><a href="../goods/spec.html">[벨지오이오소] 부라타 치즈</a></p>
 				<p><span class="price">4,900원</span></p>
 			</div>
 		</div>

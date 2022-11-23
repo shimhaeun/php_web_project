@@ -13,7 +13,7 @@
 <link rel="styleSheet" href="css/normalize.css">
 <!-- <link rel="styleSheet" href="css/index.css"> -->
 <link rel="stylesheet" href="css/sub_header.css">
-<link href="/css/flexnav.css" media="screen, projection" rel="stylesheet" type="text/css">
+<link href="css/flexnav.css" media="screen, projection" rel="stylesheet" type="text/css">
 <script src="/js/jquery.flexnav.js" type="text/javascript"></script>
 </head> 
 <body>
@@ -69,7 +69,7 @@
             <a href="login/logout.php" class="link_menu">로그아웃</a>
         </li>
         <li class="menu none_sub menu_login">
-            <a href="admin/index.php" class="link_menu">관리자 페이지</a>
+            <a href="admin/index.php" class="link_menu">관리자</a>
         </li>
     </ul>
     <?php } else{ ?>
@@ -77,21 +77,21 @@
             <a href="login/logout.php" class="link_menu">로그아웃</a>
         </li>
         <li class="menu none_sub menu_login">
-            <a href="login/logout.php" class="link_menu">내 정보</a>
+            <a href="members/member_info.php" class="link_menu">내 정보</a>
         </li>
     <?php }; ?>
-        <div class="nav">
+        <ul id="nav">
         <li class="menu lst">
                 <a href="https://www.kurly.com/shop/board/list.php?id=notice" class="link_menu">고객센터</a>
                 <ul>
                     <li><a href="notice/list.php">공지사항</a></li>
-                    <li><a href="notice/qna.php">자주하는질문</a></li>
-                    <li><a href="notice/otoinquiry.php">1:1 문의</a></li>
-                    <li><a href="notice/bulkorder.php">대량주문 문의</a></li>
+                    <li><a href="qna/list.php">자주하는질문</a></li>
+                    <li><a href="otoinquiry/otoinquiry.php">1:1 문의</a></li>
+                    <li><a href="bulkorder/bulkorder.php">대량주문 문의</a></li>
                 </ul>
         </li>
         </div>
-</ul>
+        </ul>
 </div>
 
 <!-- <div id="gnbMenu-cover"> -->

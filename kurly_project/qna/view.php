@@ -8,7 +8,7 @@ $n_idx = $_GET["n_idx"];
 include "../inc/dbcon.php";
 
 // 쿼리 작성
-$sql = "select * from notice where idx=$n_idx;";
+$sql = "select * from qna where idx=$n_idx;";
 /* echo $sql;
 exit; */
 
@@ -22,7 +22,7 @@ $array = mysqli_fetch_array($result);
 $cnt = $array["cnt"]+1;
 /* echo $cnt;
 exit; */
-$sql = "update notice set cnt = $cnt where idx = $n_idx;";
+$sql = "update qna set cnt = $cnt where idx = $n_idx;";
 /* echo $sql;
 exit; */
 mysqli_query($dbcon, $sql);
