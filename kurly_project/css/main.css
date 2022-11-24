@@ -155,6 +155,7 @@ header{
 }
 .btklogo {
 	width: 80px;
+	height: 80px;
 	color: white;
 	background-color: green;
 	border: solid green;
@@ -162,7 +163,7 @@ header{
 	float: right;
 	left: -100px;
 	text-align: center;
-	font-size: 18px;
+	font-size: 15px;
 }
 /* gnb */
 #gnbMenu-cover{
