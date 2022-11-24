@@ -11,38 +11,17 @@
     <link rel="stylesheet" type="text/css" href="../css/sr1.css">
     <link rel="stylesheet" type="text/css" href="../css/my.css">
     <link rel="stylesheet" type="text/css" href="../css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
     
-    <style>
 
-      </style>
-    </head>
-    <body>
-        <div class="bnr_header" id="top-message">
-        <a href="#" id="eventLanding">
-            지금 가입하고 인기상품 <b>100원</b>에 받아가세요!<img src="../img/ico_arrow_fff_84x84.png" class="bnr_arr">
-            <div class="bnr_top">
-            <div class="inner_top_close">
-            <button id="top-message-close" class="btn_top_bnr">가입하고 혜택받기</button>
-            </div>
-            </div>
-        </a>
-        </div>
-        <div id="userMenu">
+        <!-- <div id="userMenu">
         <ul class="list_menu">
         <li class="menu_join"><a href="#" class="link_menu">회원가입</li></a>
         <li class="menu_login"><a href="#" class="link_menu">로그인</li></a>
         
         <li class="menu lst"> <a href="#" class="link_menu">고객센터</li></a>
         <img src="../img/ico_down_16x10.png">
-            <!--
-            <ul class="sub">
-                <li>공지사항</li>
-                <li>자주하는 질문</li>
-                <li>1:1 문의</li>
-                <li>상품 제안</li>
-                <li>에코포장 피드백</li>
-            </ul>
-            -->
+
         </li>
         </ul>
       </div>
@@ -53,11 +32,13 @@
         <div id="gnb" class="">
          <div id="gnbMenu" class="gnb_kurly"><div class="inner_gnbkurly"><div class="gnb_main"><ul class="gnb"><li class="menu1"><a href="#none"><span class="ico"></span><span class="txt">전체 카테고리</span></a></li> <li class="menu2"><a href="#" class="link new "><span class="txt">신상품</span></a></li> <li class="menu3"><a href="category=029" class="link best "><span class="txt">베스트</span></a></li> <li class="menu4"><a href="#" class="link bargain "><span class="txt">알뜰쇼핑</span></a></li> <li class="lst"><a href="#" class="link event "><span class="txt">특가/혜택</span></a></li></ul> <div id="side_search" class="gnb_search"><form action="https://www.kurly.com/shop/goods/goods_search.php?&amp;" onsubmit=""><input name="searched" value="Y" type="hidden"> <input name="log" value="1" type="hidden"> <input name="skey" value="all" type="hidden"> <input name="hid_pr_text" value="" type="hidden"> <input name="hid_link_url" value="" type="hidden"> <input id="edit" name="edit" value="" type="hidden"> <input name="sword" id="" required="required" label="검색어" class="inp_search" type="text"> <input src="../img/ico_search_x2.png" class="btn_search" type="image"> <div class="init"></div></form></div> <div class="cart_count"><div class="inner_cartcount"><a href="#" class="btn_cart"><span class="tit"></span> <span class="txt">
        </div>
-    </body>
+    </body> -->
+<div id="wrapper">
+    <?php include "../inc/sub_header.php"?>
     </html>
 
-
-<div id="sectionView"><div class="inner_view"><div class="thumb" style="background-image: url(&quot;img/160099999429y0.jpg&quot;);"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAXcAAAHnCAQAAADpr9U2AAABeUlEQVR42u3BMQEAAADCoPVPbQ0PoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALg0lPQAATTM2xoAAAAASUVORK5CYII=" alt="상품 대표 이미지" class="bg"></div> <p class="goods_name"><span class="btn_share"><button id="btnShare" data-goodsno="53329">공유하기</button></span> <strong class="name">[Kurly's] 국산콩 두부 300g</strong> <span class="short_desc">1등급 국산콩의 진한 고소함</span></p> <p class="goods_dcinfo">회원할인가</p> <p class="goods_price"><span class="position"><span class="dc"><!----> <span class="dc_price">1,615<span class="won">원</span></span> <span class="dc_percent">15<span class="per">%</span></span></span> <a class="original_price"><span class="price">1,900<span class="won">원</span></span><img src="../img/question_24_24_c999.svg" alt="물음표" class="ico"></a> <span class="layer_position"><!----> <span class="layer_price"><strong class="tit_layer">컬리판매가 기준 할인</strong>                        동일 품질 상품의 주요 온/오프라인 유통사 가격과 비교하여 컬리가 설정한 가격에서 할인된 가격입니다.                        <span class="bar"></span>                        적용된 할인가는 대표 상품의 가격으로 옵션에 따라 할인 혜택이 다를 수 있습니다. 할인 혜택은 당사 사정에 따라 변경될 수 있습니다.                    </span> <button type="button" class="btn_close">레이어 닫기</button></span></span> <!----> <!----> <!----> <!----> <span class="not_login"><span>로그인 후, 회원할인가와 적립혜택이 제공됩니다.</span> <!----></span></p> <div class="goods_info"><dl class="list fst"><dt class="tit">판매단위</dt> <dd class="desc">1팩</dd></dl> <dl class="list"><dt class="tit">중량/용량</dt> <dd class="desc">300g</dd></dl> <dl class="list"><dt class="tit">배송구분</dt> <!----> <dd class="desc">샛별배송/택배배송</dd></dl> <!----> <dl class="list"><dt class="tit">포장타입</dt> <dd class="desc">                    냉장/종이포장                    <strong class="emph">                      택배배송은 에코포장이 스티로폼으로 대체됩니다.                    </strong></dd></dl> <dl class="list"><dt class="tit">알레르기정보</dt> <dd class="desc">- 대두 함유</dd></dl> <!----> <dl class="list"><dt class="tit">유통기한</dt> <dd class="desc">출고일 기준, 유통기한 만기 8일 이상 남은 상품을 보내드립니다. (총유통기한 : 15일)</dd></dl> <!----> <!---->  <!----> <!----> <!----></div> <!----></div></div>
+<div class="gnb_main">
+<div id="sectionView"><div class="inner_view"><div class="thumb" style="background-image: url(&quot;img/160099999429y0.jpg&quot;);"><img src="../img/dubu.jpg" alt="상품 대표 이미지" class="bg"></div> <p class="goods_name"><span class="btn_share"><button id="btnShare" data-goodsno="53329">공유하기</button></span> <strong class="name">[Kurly's] 국산콩 두부 300g</strong> <span class="short_desc">1등급 국산콩의 진한 고소함</span></p> <p class="goods_dcinfo">회원할인가</p> <p class="goods_price"><span class="position"><span class="dc"><!----> <span class="dc_price">1,615<span class="won">원</span></span> <span class="dc_percent">15<span class="per">%</span></span></span> <a class="original_price"><span class="price">1,900<span class="won">원</span></span><img src="../img/question_24_24_c999.svg" alt="물음표" class="ico"></a> <span class="layer_position"><!----> <span class="layer_price"><strong class="tit_layer">컬리판매가 기준 할인</strong>                        동일 품질 상품의 주요 온/오프라인 유통사 가격과 비교하여 컬리가 설정한 가격에서 할인된 가격입니다.                        <span class="bar"></span>                        적용된 할인가는 대표 상품의 가격으로 옵션에 따라 할인 혜택이 다를 수 있습니다. 할인 혜택은 당사 사정에 따라 변경될 수 있습니다.                    </span> <button type="button" class="btn_close">레이어 닫기</button></span></span> <!----> <!----> <!----> <!----> <span class="not_login"><span>로그인 후, 회원할인가와 적립혜택이 제공됩니다.</span> <!----></span></p> <div class="goods_info"><dl class="list fst"><dt class="tit">판매단위</dt> <dd class="desc">1팩</dd></dl> <dl class="list"><dt class="tit">중량/용량</dt> <dd class="desc">300g</dd></dl> <dl class="list"><dt class="tit">배송구분</dt> <!----> <dd class="desc">샛별배송/택배배송</dd></dl> <!----> <dl class="list"><dt class="tit">포장타입</dt> <dd class="desc">                    냉장/종이포장                    <strong class="emph">                      택배배송은 에코포장이 스티로폼으로 대체됩니다.                    </strong></dd></dl> <dl class="list"><dt class="tit">알레르기정보</dt> <dd class="desc">- 대두 함유</dd></dl> <!----> <dl class="list"><dt class="tit">유통기한</dt> <dd class="desc">출고일 기준, 유통기한 만기 8일 이상 남은 상품을 보내드립니다. (총유통기한 : 15일)</dd></dl> <!----> <!---->  <!----> <!----> <!----></div> <!----></div></div>
 <div id="cartPut"><div class="cart_option cartList cart_type2"><div class="inner_option"><!----> <!----> <div class="in_option"><div class="list_goods"><!----> <!----> <!----> <ul class="list list_nopackage"><li class="on"><span class="btn_position"><button type="button" class="btn_del"><span class="txt">삭제하기</span></button></span> <span class="name"><!----> [Kurly's] 국산콩 두부 300g <!----></span> <span class="tit_item">구매수량</span> <span>1</span> <div class="option"><span class="price"><!----> <span class="dc_price">1,900원</span></span></div></li></ul></div> <div class="total"><div class="price"><!----> <strong class="tit">총 상품금액 :</strong> <span class="sum"><span class="num">1,900</span> <span class="won">원</span></span></div> <p class="txt_point"><span class="ico">적립</span> <span class="no_login"><span>로그인 후, 회원할인가와 적립혜택 제공</span> <!----></span> <!----></p></div></div> <div class="group_btn off"><div class="view_function"><button type="button" class="btn btn_save">늘 사는 것</button> <button type="button" class="btn btn_alarm">재입고 알림</button></div> <span class="btn_type1"><button type="button" class="txt_type">장바구니 담기</button> <!----></span> <!----> <!----> <!----></div></div></div> <div class="cart_option cartList cart_type1"><div class="inner_option"><!----> <!----> <div class="in_option"><div class="list_goods"><div class="bar_open"><button type="button" class="btn_close"><span class="ico">상품 선택</span></button></div> <!----> <!----> <!----></div> <!----></div> <div class="group_btn off"><div class="view_function"><button type="button" class="btn btn_save">늘 사는 것</button> <button type="button" class="btn btn_alarm">재입고 알림</button></div> <span class="btn_type1"><button type="button" class="txt_type">장바구니 담기</button> <!----></span> <!----> <!----> <!----></div></div></div> <div class="cart_option cart_type3 notify_option"><div class="inner_option"><strong class="tit">재입고 알림 신청</strong> <p class="name_deal">[Kurly's] 국산콩 두부 300g</p> <!----> <!----> <p class="notice"><span class="ico">·</span>상품이 입고되면 앱 푸시 또는 알림톡으로 알려 드립니다.</p> <div class="group_btn layer_btn2"><span class="btn_type2"><button type="button" class="txt_type">취소</button></span> <span class="btn_type1"><button type="button" class="txt_type">신청하기</button></span></div></div></div> <div class="cart_option cart_result cart_type3"><div class="inner_option"><button type="button" class="btn_close1">pc레이어닫기</button> <p class="success">상품 구매를 위한 <span class="bar"></span>배송지를 설정해주세요</p> <div class="group_btn layer_btn2"><span class="btn_type2"><button type="button" class="txt_type">취소</button></span> <span class="btn_type1"><button type="button" class="txt_type"><span class="ico_search"></span>주소 검색</button></span></div></div></div> <form name="frmBuyNow" method="post" action="https://www.kurly.com/shop/order/order.php"><input name="mode" value="addItem" type="hidden"> <input name="goodsno" value="" type="hidden"></form> <form name="frmWishlist" method="post"></form></div>
 </div>
 
@@ -302,11 +283,10 @@
 </font></div><font color="grey">
 
 </font></div><font color="grey">
+</div>
 <div class="goods-view-infomation-content" id="goods-image">
 <div id="goods_pi">
-<p class="pic">
-<img src="../img/gv20000123466_1.jpg">
-</p>
+
 </div>
 </div>
 <div class="goods-view-infomation-content" id="goods-infomation">
@@ -600,4 +580,5 @@
 </div>
 </div>
 </body>
+</div>
 </html>

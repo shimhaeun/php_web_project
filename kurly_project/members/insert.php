@@ -13,23 +13,24 @@ $addr_b = $_POST["addr_b"];
 $addr_d = $_POST["addr_d"];
 $addr = $ps_code." ".$addr_b." ".$addr_d;
 $gender = $_POST["gender"];
-$apply = $_POST["apply"];
+// $apply = $_POST["apply"];
 
 // 시간 구하기
 $reg_date = date("Y-m-d");
 
 // 값 확인
-/* echo "<p> 이름 : ".$u_name."</p>";
-echo "<p> 아이디 : ".$u_id."</p>";
-echo "<p> 비밀번호 : ".$pwd."</p>";
-echo "<p> 전화번호 : ".$mobile."</p>";
-echo "<p> 이메일 : ".$email."</p>";
-echo "<p> 생년월일 : ".$birth."</p>";
-echo "<p> 우편번호 : ".$ps_code."</p>";
-echo "<p> 기본주소 : ".$addr_b."</p>";
-echo "<p> 상세주소 : ".$addr_d."</p>";
-echo "<p> 성별 : ".$gender."</p>";
-echo "<p> 가입일 : ".$reg_date."</p>"; */
+// echo "<p> 이름 : ".$u_name."</p>";
+// echo "<p> 아이디 : ".$u_id."</p>";
+// echo "<p> 비밀번호 : ".$pwd."</p>";
+// echo "<p> 전화번호 : ".$mobile."</p>";
+// echo "<p> 이메일 : ".$email."</p>";
+// echo "<p> 생년월일 : ".$birth."</p>";
+// echo "<p> 우편번호 : ".$ps_code."</p>";
+// echo "<p> 기본주소 : ".$addr_b."</p>";
+// echo "<p> 상세주소 : ".$addr_d."</p>";
+// echo "<p> 성별 : ".$gender."</p>";
+// echo "<p> 가입일 : ".$reg_date."</p>";
+// exit;
 
 
 // DB 연결
@@ -84,6 +85,7 @@ $sql .= "'$ps_code', '$addr_b', '$addr_d',";
 $sql .= "'$gender', '$reg_date');";
 
 // echo $sql;
+// exit;
 
 // 데이터베이스에 쿼리 전송
 // mysqli_query("DB 연결객체", "전송할 쿼리");

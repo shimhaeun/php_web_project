@@ -9,9 +9,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=**Nanum+Gothic+Coding:wght@700**&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/main.css">
-<!-- <link rel="styleSheet" href="../css/main2.css"> -->
 <link rel="styleSheet" href="css/normalize.css">
-<!-- <link rel="styleSheet" href="css/index.css"> -->
 <link rel="stylesheet" href="css/sub_header.css">
 <link href="css/flexnav.css" media="screen, projection" rel="stylesheet" type="text/css">
 <script src="/js/jquery.flexnav.js" type="text/javascript"></script>
@@ -28,7 +26,6 @@
 <script type="text/javascript" src="//use.typekit.net/qyb8ood.js"></script>
 <script src="/js/timer.js"></script>
 <script src="js/bxslider.js"></script>
-<!-- <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script> -->
 <script src="js/dropdown.js"></script>
 </head>
 <body>
@@ -65,6 +62,7 @@
         </li>
     </ul>
     <?php } else if($s_id == "admin"){ ?>
+        <ul class="list_menu">
         <li class="menu none_sub menu_login">
             <a href="login/logout.php" class="link_menu">로그아웃</a>
         </li>
@@ -73,12 +71,14 @@
         </li>
     </ul>
     <?php } else{ ?>
+        <ul class="list_menu">
         <li class="menu none_sub menu_login">
             <a href="login/logout.php" class="link_menu">로그아웃</a>
         </li>
         <li class="menu none_sub menu_login">
             <a href="members/member_info.php" class="link_menu">내 정보</a>
         </li>
+    </ul>
     <?php }; ?>
         <ul id="nav">
         <li class="menu lst">
@@ -90,7 +90,6 @@
                     <li><a href="bulkorder/bulkorder.php">대량주문 문의</a></li>
                 </ul>
         </li>
-        </div>
         </ul>
 </div>
 

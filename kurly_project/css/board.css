@@ -49,10 +49,14 @@ table a:hover{color:green}
 
 title {
     padding-top: 20px;
+    text-align: center;
 }
 .notice_list {
     width: 800px;
     padding-top: 70px;
     margin-left: auto;
     margin-right: auto;
+}
+.list {
+padding-top:20px;
 }

@@ -15,9 +15,10 @@
  <div class="product-list">
 	<h2 class="title-goods">이 상품 어때요?</h2>
 	<div class="product-list-inner">
-		<div class="box"><div><a href="../goods/spec.html"><a href="../goods/spec.html" img src="http://localhost/kurly_project/img/cheeseimg.png"></a></div>
+		<div class="box"><div><a href="goods/spec.php">
+		 <img src="http://localhost/kurly_project/img/cheeseimg.png"></a></div>
 			<div class="txt">
-				<p><a href="../goods/spec.html">[벨지오이오소] 부라타 치즈</a></p>
+				<p><a href="#">[벨지오이오소] 부라타 치즈</a></p>
 				<p><span class="price">4,900원</span></p>
 			</div>
 		</div>
@@ -43,19 +44,6 @@
 		</div>
 	</div>
 </div>
-<!-- <div class="list_goods">
-	<div class="bx-wrapper" style="max-width: 1050px; margin: 0px auto;">
-		<div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 506px;">
-			<ul data-title="이 상품 어때요?" data-section="today_recommendation" class="list" style="width: 2215%; position: relative; transition-duration: 0s; transform: translate3d(0px, 0px, 0px);">
-				<li data-index="1" class="" data-name="today_recommendation" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;"><a class="thumb_goods" href="../../../goods/spec.html"> <img src="https://img-cf.kurly.com/shop/data/goods/1600999994477l0.jpg" alt="상품이미지" class="thumb" style="background-image: url('https://img-cf.kurly.com/shop/data/goods/1600999994477l0.jpg');"></a> <div class="info_goods"><span class="name"><a class="txt">[Kurly's] 국산콩 두부 300g</a></span> <span class="price"><span class="orange">15%</span>1,615원                            </span> <span class="price">1,900원</span></div></li>
-				<li data-index="2" class="" data-name="today_recommendation" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;"><a class="thumb_goods"> <img src="https://img-cf.kurly.com/shop/data/goods/1470792458150l0.jpg" alt="상품이미지" class="thumb" style="background-image: url('https://img-cf.kurly.com/shop/data/goods/1470792458150l0.jpg');"></a> <div class="info_goods"><span class="name"><a class="txt">무농약 고추 5종</a></span> <span class="price"><span class="dc">12%</span>1,496원                            </span> <span class="cost">1,700원</span></div></li>
-				<li data-index="3" class="cut" data-name="today_recommendation" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;"><a class="thumb_goods"> <img src="https://img-cf.kurly.com/shop/data/goods/1618982721607l0.jpg" alt="상품이미지" class="thumb" style="background-image: url('https://img-cf.kurly.com/shop/data/goods/1618982721607l0.jpg');"></a> <div class="info_goods"><span class="name"><a class="txt">[김재식헬스푸드] 순수석류즙 80ml 21팩</a></span> <span class="price"><span class="dc">10%</span>32,310원                            </span> <span class="cost">35,900원</span></div></li>
-				<li data-index="4" class="" data-name="today_recommendation" style="float: left; list-style: none; position: relative; width: 249px; margin-right: 18px;"><a class="thumb_goods"> <img src="https://img-cf.kurly.com/shop/data/goods/1499651211513l0.jpg" alt="상품이미지" class="thumb" style="background-image: url('https://img-cf.kurly.com/shop/data/goods/1499651211513l0.jpg');"></a> <div class="info_goods"><span class="name"><a class="txt">[콜리오스] 페타 치즈</a></span> <span class="price"><span class="dc">10%</span>5,940원                            </span> <span class="cost">6,600원</span></div></li>
-			</ul>
-		</div>
-	</div>
-	</div>  -->
-
 <div class="main-special">
 	<div class="main-special-inner">
 		<div class="special">
@@ -569,38 +557,6 @@
 		</div>
 	</div>
 </div>
-
-<!-- <div class="product-list">
-	<h2 class="title-goods">키토제닉</h2> -->
-	<!-- <div class="product-list-inner">
-		<div class="box"><div><a href="#"><img src="img/1604392328338l0.jpg"></a></div>
-			<div class="txt">
-				<p><a href="#">[시즈널마켓] 키토레드커리</a></p>
-				<p><span class="orange">15% </span><span class="price">10,965원</span></p>
-				<del>12,900원</del>
-			</div>
-		</div>
-		<div class="box"><div><a href="#"><img src="img/161484103851l0.jpg"></a></div>
-			<div class="txt">
-				<p><a href="#">[마이노멀] 시그니처 방탄커피</a></p>
-				<span class="price">2,700원</span>
-			</div>
-		</div>
-		<div class="box"><div><a href="#"><img src="img/1537431008490l0.webp"></a></div>
-			<div class="txt">
-				<p><a href="#">[라우린] MCT 코코넛 오일</a></p>
-				<span class="price">15,800원</span>
-			</div>
-		</div>
-		<div class="box"><div><a href="#"><img src="img/1612247678747l0.jpg"></a></div>
-			<div class="txt">
-				<p><a href="#">[키플] 키토제닉 스리라차 쉬림프 오믈렛</a></p>
-				<p><span class="orange">5% </span><span class="price">7,125원</span></p>
-				<del>7,500원</del>
-			</div>
-		</div>
-	</div> -->
-<!-- </div> -->
 
 <div class="main-recipe">
 	<h2 class="title-goods">컬리의 레시피</h2>

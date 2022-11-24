@@ -84,7 +84,7 @@ mysqli_query($dbcon, $sql);
 <body>
     <?php include "../../inc/sub_header.php"; ?>
     <div class="notice_list">
-    <h2>공지사항</h2>
+    <h2>자주 묻는 질문</h2>
     <?php if($s_id == "admin"){ ?>
     <p class="write_area">
         <span><a href="write.php">[글쓰기]</a></span>
@@ -133,4 +133,5 @@ mysqli_query($dbcon, $sql);
     </p>
 </body>
 </div>
+<?php include "../inc/footer.html"; ?>
 </html>

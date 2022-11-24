@@ -1,12 +1,10 @@
 
 .menu_join {
     float: right;
-    width: 1050px;
     height: 40px;
 }
 .member_login {
-    float: right;
-    width: 1050px;
+    /* float: right; */
     height: 40px;
 }
 #userMenu .none_sub:hover .sub{display:none}

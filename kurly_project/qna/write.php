@@ -67,4 +67,5 @@ include "../inc/session.php";
         </fieldset>
     </form>
 </body>
+<?php include "../inc/footer.html"; ?>
 </html>

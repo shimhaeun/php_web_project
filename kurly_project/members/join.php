@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../css/join.css">
     <title>회원가입</title>
-    <style type="text.css">
+    <style type="text/css">
         body,input,button,select,option{font-size:20px}
         input[type=checkbox]{width:20px;height:20px}
         input[type=radio]{width:20px;height:20px}
@@ -103,7 +103,7 @@
     </script>
 </head>
 <body>
-    <form name="join_form" action="insert.php" method="get" onsubmit="return join_form_check()">
+    <form name="join_form" action="insert.php" method="post" onsubmit="return join_form_check()">
         <fieldset>
             <legend>회원가입</legend>
             <p>

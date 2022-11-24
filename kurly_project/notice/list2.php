@@ -5,7 +5,7 @@
 include "../inc/dbcon.php";
 
 // 쿼리 작성
-$sql = "select * from qna;";
+$sql = "select * from notice;";
 
 // 쿼리 전송
 $result = mysqli_query($dbcon, $sql);
@@ -53,7 +53,7 @@ if($e_pageNum > $total_page){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>자주 묻는 질문</title>
+    <title>공지사항</title>
     <link rel="stylesheet" type="text/css" href="../css/dropdown.css">
     <!-- <link rel="stylesheet" type="text/css" href="../css/main.css"> -->
     <link rel="stylesheet" type="text/css" href="../css/board.css">
@@ -74,7 +74,7 @@ if($e_pageNum > $total_page){
     <div>
     </div>
     <div class="notice_list">
-    <h2 class="notice">자주 묻는 질문</h2>
+    <h2 class="notice">공지사항</h2>
     <p>전체 <?php echo $total; ?>개</p>
     <table class="notice_list_set">
         <tr class="notice_list_title">
@@ -147,5 +147,4 @@ if($e_pageNum > $total_page){
     <?php }; ?>
     </p>
 </body>
-<?php include "../inc/footer.html"; ?>
 </html>
