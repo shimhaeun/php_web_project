@@ -34,7 +34,6 @@
     <link rel="icon" type="image/png" sizes="192x192" href="https://res.kurly.com/images/marketkurly/logo/ico_192.png">
     <link rel="icon" type="image/png" sizes="16x16" href="https://res.kurly.com/images/marketkurly/logo/ico_16.png">
 
-    <!-- <link rel="styleSheet" href="../css/main2.css"> -->
     <link rel="styleSheet" href="../css/main.css">
     <link rel="styleSheet" href="../css/normalize.css">
     <link rel="styleSheet" href="../css/index.css">
@@ -54,7 +53,7 @@
 
     <link rel="stylesheet" href="../css/goodslist_all.css">
 </head>
-<?php include "../inc/header.php" ?>
+<?php include "../inc/sub_header.php" ?>
 <body>
                         <div calss="gnb_sub" style="display: none; width: 219px;">
                             <div class="inner_sub">
@@ -164,22 +163,23 @@
             <div class="wrap">
                 <div class="category-main-image"></div>
                 <!-- CATEGORY -->
-                <!-- <div class="category-group clearfix">
+                 <div class="category-group clearfix">
                     <div class="category__icon"></div>
                     <div class="category__name">채소</div>
                 </div>
                 <div class="sub-category-container clearfix">
                     <ul class="sub-category-group">
-                        <li><a href="상품리스트-전체.html">전체보기</a></li>
-                        <li><a href="category-list/상품리스트-친환경.html">친환경</a></li>
-                        <li><a href="category-list/상품리스트-고구마.html">고구마·감자·당근</a></li>
-                        <li><a href="category-list/상품리스트-시금치.html">시금치·쌈채소·나물</a></li>
-                        <li><a href="category-list/상품리스트-브로콜리.html">브로콜리·파프리카·양배추</a></li>
-                        <li><a href="category-list/상품리스트-양파.html">양파·대파·마늘·배추</a></li>
-                        <li><a href="category-list/상품리스트-오이.html">오이·호박·고추</a></li>
-                        <li><a href="category-list/상품리스트-냉동.html">냉동·이색·간편채소</a></li>
-                        <li><a href="category-list/상품리스트-콩나물.html">콩나물·버섯</a></li>
-                    </ul> CATEGORY 끝 -->
+                        <li><a href="goodslist_all.php/">전체보기</a></li>
+                        <li><a href="goodslist_echo.html">친환경</a></li>
+                        <li><a href="goodslist_sweetpotato.html">고구마·감자·당근</a></li>
+                        <li><a href="goodslist_spinach.html">시금치·쌈채소·나물</a></li>
+                        <li><a href="goodslist_broccoli.html">브로콜리·파프리카·양배추</a></li>
+                        <li><a href="goodslist_onion.html">양파·대파·마늘·배추</a></li>
+                        <li><a href="goodslist_cucucmber.html">오이·호박·고추</a></li>
+                        <li><a href="goodslist_frozen.html">냉동·이색·간편채소</a></li>
+                        <li><a href="goodslist_beansprouts.html">콩나물·버섯</a></li>
+                    </ul> 
+                    <!-- CATEGORY 끝 -->
                     <ul class="sort-menu">
                         <div class="selcet-menu"><a href="#">추천순</a></div>
                         <ul class="menu-list">

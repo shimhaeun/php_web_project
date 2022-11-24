@@ -147,4 +147,5 @@ if($e_pageNum > $total_page){
     <?php }; ?>
     </p>
 </body>
+<?php include "../inc/footer.html"?>
 </html>

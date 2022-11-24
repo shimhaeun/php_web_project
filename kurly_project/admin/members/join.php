@@ -211,5 +211,6 @@
                 </p>
         </fieldset>
     </form>
+    <?php include "../inc/footer.html"?>
 </body>
 </html>
