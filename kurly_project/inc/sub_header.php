@@ -22,14 +22,14 @@
 
 <div id="headerLogo">
     <div class="logo">
-        <a href="#top"><img src="http://localhost/kurly_project/img/logo.jpg"></a>
+        <a href="#top"><img src="../img/logo.jpg"></a>
         <div class="logogroup">
-            <div class="mkklogo" style="cursor: pointer; font-size: 18px;">
-                <a href="http://localhost/kurly_project" style="color: white;">
+            <div class="mkklogo" style="cursor: pointer; font-size: 16px;">
+                <a href="../index.php" style="color: white;">
                     마켓컬리
                 </a>
             </div>
-            <div class="btklogo" style="cursor: pointer; font-size: 18px;">
+            <div class="btklogo" style="cursor: pointer; font-size: 16px;">
                 뷰티컬리
             </div>
         </div>
@@ -375,8 +375,8 @@
     </form>
 </div>
 <div class="search">
-<input type="text" placeholder="빵빵한 라인업 온라인 빵지순례!"><a href="#"><img src="http://localhost/kurly_project/img/search_icon.png" class="sch"></a></input>
-<img src="http://localhost/kurly_project/img/heart.png" class="deli" style="cursor: pointer;"><img src="http://localhost/kurly_project/img/cart_icon.png" class="cart" style="cursor: pointer;">
+<input type="text" placeholder="빵빵한 라인업 온라인 빵지순례!"><a href="#"><img src="../img/search_icon.png" class="sch"></a></input>
+<img src="../img/heart.png" class="deli" style="cursor: pointer;"><img src="../img/cart_icon.png" class="cart" style="cursor: pointer;">
 </div>
 <!-- <div class="cart_count">
     <div class="inner_cartcount">

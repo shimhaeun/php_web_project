@@ -13,7 +13,7 @@ $addr_b = $_POST["addr_b"];
 $addr_d = $_POST["addr_d"];
 $addr = $ps_code." ".$addr_b." ".$addr_d;
 $gender = $_POST["gender"];
-// $apply = $_POST["apply"];
+$apply = $_POST["apply"];
 
 // 시간 구하기
 $reg_date = date("Y-m-d");
@@ -90,7 +90,6 @@ $sql .= "'$gender', '$reg_date');";
 // 데이터베이스에 쿼리 전송
 // mysqli_query("DB 연결객체", "전송할 쿼리");
 mysqli_query($dbcon, $sql);
-
 
 // DB 접속 종료
 // mysqli_close("연결객체");

@@ -7,16 +7,20 @@ $n_title = $_POST["n_title"];
 $n_content = $_POST["n_content"];
 
 // 파일 업로드
-if($S_FILES["up_file"] != NULL){
+if($_FILES["up_file"] != NULL){
     $tmp_name = $_FILES["up_file"]["tmp_name"];
-    $name = $_FILES["up_file"]["name"];
-    // $up = move_uploaded_file(임시파일이름,"저장할 위치/저장할 이름");
-    $up = move_uploaded_file($tmp_name,"../data/$name");
-}
+    $f_name = $_FILES["up_file"]["name"];
+    $up = move_uploaded_file($tmp_name, "../data/$f_name");
+};
+/* echo $_FILES["up_file"]["tmp_name"]."/";
+echo $_FILES["up_file"]["name"]."/";
+echo $_FILES["up_file"]["type"]."/";
+echo $_FILES["up_file"]["size"];
+exit; */
 
-$f_name = $_FILES["up_file"]["name"];
 $f_type = $_FILES["up_file"]["type"];
 $f_size = $_FILES["up_file"]["size"];
+
 
 // 작성일자
 $w_date = date("Y-m-d");

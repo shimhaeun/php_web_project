@@ -13,6 +13,9 @@
 	
 }	
 
+#nav_menu {
+	width:1050px;
+}
 #nav li{
 	list-style: none;
 	font-size: 13px;
@@ -29,7 +32,7 @@
 	line-height: 50px;
 	text-decoration: none;
 	height: 40px;
-	color: green;
+	color: rgb(0, 128, 0);
 	font-family: 'Nanum Gothic Coding', monospace;
 	
 }

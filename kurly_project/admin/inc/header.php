@@ -36,10 +36,10 @@
 
 <div id="headerLogo">
     <div class="logo">
-        <a href="#top"><img src="http://localhost/kurly_project/img/logo.jpg"></a>
+        <a href="#top"><img src="../img/logo.jpg"></a>
         <div class="logogroup">
             <div class="mkklogo" style="cursor: pointer; font-size: 18px;">
-                <a href="http://localhost/kurly_project" style="color: white;">
+                <a href="kurly_project/index.php" style="color: white;">
                     마켓컬리
                 </a>
             </div>
@@ -51,7 +51,7 @@
 </div>
 
 <!-- <div class="search"> -->
-<!-- <input type="text" placeholder="빵빵한 라인업 온라인 빵지순례!"><a href="#"><img src="http://localhost/kurly_project/img/ico_search_x2.png" class="sch"></a></input>
+<!-- <input type="text" placeholder="빵빵한 라인업 온라인 빵지순례!"><a href="#"><img src="http://_project/img/ico_search_x2.png" class="sch"></a></input>
 <img src="http://localhost/kurly_project/img/heart.png" class="deli" style="cursor: pointer;"><img src="http://localhost/kurly_project/img/cart_icon.png" class="cart" style="cursor: pointer;"> -->
 <!-- </div>  -->
 <div id="userMenu">
@@ -377,8 +377,8 @@
     </form>
 </div>
 <div class="search">
-<input type="text" placeholder="빵빵한 라인업 온라인 빵지순례!"><a href="#"><img src="http://localhost/kurly_project/img/search_icon.png" class="sch"></a></input>
-<img src="http://localhost/kurly_project/img/heart.png" class="deli" style="cursor: pointer;"><img src="http://localhost/kurly_project/img/cart_icon.png" class="cart" style="cursor: pointer;">
+<input type="text" placeholder="빵빵한 라인업 온라인 빵지순례!"><a href="#"><img src="img/search_icon.png" class="sch"></a></input>
+<img src="../../img/heart.png" class="deli" style="cursor: pointer;"><img src="/img/cart_icon.png" class="cart" style="cursor: pointer;">
 </div>
 <!-- <div class="cart_count">
     <div class="inner_cartcount">

@@ -33,6 +33,15 @@ $array = mysqli_fetch_array($result);
         body,input,button,select,option{font-size:20px}
         input[type=radio]{width:20px;height:20px}
     </style>
+    <link rel="stylesheet" type="text/css" href="../css/dropdown.css">
+    <link rel="stylesheet" type="text/css" href="../css/board.css">
+    <link rel="styleSheet" href="../css/main.css">
+    <link rel="styleSheet" href="../css/normalize.css">
+    <script type="text/javascript" src="../js/jquery-3.6.1.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.flexnav.min.js"></script>    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@700&display=swap" rel="stylesheet">
+    <?php include "../inc/sub_header.php" ?>
     <script>
         function edit_form_check(){
             var pwd = document.getElementById("pwd");
@@ -74,9 +83,11 @@ $array = mysqli_fetch_array($result);
         };
     </script>
 </head>
+
 <body>
     <form name="edit_form" action="edit.php" method="post" onsubmit="return edit_form_check()">
-        <fieldset>
+        <fieldset style="word-spacing: 10px;letter-spacing: 0px;font-size: 20px;line-height: 40px;">
+        
             <legend>회원정보</legend>
             <input type="hidden" name="g_idx" value="<?php echo $array["idx"]; ?>">
             <p>

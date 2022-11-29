@@ -19,9 +19,7 @@
             var pwd = document.getElementById("pwd");
             var repwd = document.getElementById("repwd");
             var mobile = document.getElementById("mobile");
-            var apply1 = document.getElementById("apply1");
-            var apply2 = document.getElementById("apply2")
-            var apply3 = document.getElementById("apply3")
+            var apply1 = document.getElementById("apply");
 
             if(!u_name.value){
                 alert("이름을 입력하세요.");

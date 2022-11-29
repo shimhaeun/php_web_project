@@ -57,7 +57,7 @@ mysqli_query($dbcon, $sql);
 
         .list{width:860px;text-align:center;padding-top:20px;}
 
-        a:hover{color:rgb(255, 128, 0)}
+        a:hover{color:rgb(0, 128, 0)}
 
         <?php if($s_id == "admin"){ ?>
         .write_area{
@@ -102,8 +102,8 @@ mysqli_query($dbcon, $sql);
             <th class="v_title">날짜</th>
             <td class="v_content">
             <?php 
-            $n_title = substr($array["n_title"], 0, 10);
-            echo $n_title; 
+            $w_date = substr($array["w_date"], 0, 10);
+            echo $w_date; 
             ?>
             </td>
         </tr>
@@ -111,24 +111,15 @@ mysqli_query($dbcon, $sql);
             <th class="v_title">조회수</th>
             <td class="v_content"><?php echo $cnt; ?></td>
         </tr>
-        <tr class="notice_view_content">
-            <th class="v_title">첨부파일</th>
-            <td class="v_content">
-            <a href="../data/<?php echo $array["f_name"]; ?>" download="<?php echo $array["f_name"]; ?>">
-            <?php echo $array["f_name"]; ?>
-            </a>
-        </td>
-        </tr>
         <tr class="notice_view_text">
             <td colspan="2" class="v_text">
             <?php
-            // 첨부파일이 있고 이미지파일일 경우
             if($array["f_name"] && substr($array["f_type"], 0, 5) == "image"){
                 $f_name = $array["f_name"];
                 echo "
-                <p>
-                    <img src=\"../data/$f_name\" alt=\"\">
-                </p>
+                    <p>
+                        <img src=\"../data/$f_name\" alt=\"\">
+                    </p>
                 ";
             };
             ?>
@@ -140,6 +131,14 @@ mysqli_query($dbcon, $sql);
             echo $n_content; 
             ?>
             </td>
+        </tr>
+        <tr class="notice_view_content">
+            <th class="v_title">첨부파일</th>
+            <td class="v_content">
+            <a href="../data/<?php echo $array["f_name"]; ?>" download="<?php echo $array["f_name"]; ?>">
+            <?php echo $array["f_name"]; ?>
+            </a>
+        </td>
         </tr>
     </table>
     <p class="list">

@@ -1,5 +1,5 @@
 <?php 
-include "../inc/session.php"; 
+// include "../inc/session.php"; 
 // include "../inc/admin_check.php";
 ?>
 <!DOCTYPE html>
@@ -13,6 +13,11 @@ include "../inc/session.php";
         body,input,button,textarea{font-size:20px}
         input[type=checkbox]{width:20px;height:20px}
     </style>
+    <link rel="styleSheet" href="../css/main.css">
+    <link rel="styleSheet" href="../normalize.css">
+    <link rel="styleSheet" href="../../index.css">
+    <script type="text/javascript" src="../js/jquery-3.6.1.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.flexnav.min.js"></script>
     <script src="js/jquery.bxslider.js"></script>
 
     <script>
@@ -46,7 +51,7 @@ include "../inc/session.php";
 
             <p>
                 <label for="n_title">제목</label>
-                <input type="text" name="n_title" id="n_title">
+                <input type="text" name="n_title" id="n_title" value="<?php echo $array["n_title"]; ?>">
             </p>
 
             <p>
@@ -54,7 +59,17 @@ include "../inc/session.php";
                 <textarea cols="60" rows="10" name="n_content" id="n_content"></textarea>
             </p>
             <p>
-                <label for="n_content">첨부파일[<?php echo $array ["f_name"];?>]</label>
+                <?php if($array["f_name"]){ ?>
+                <label for="up_file">
+                    첨부파일 [<?php echo $array["f_name"]; ?>]
+                </label>
+                <input type="checkbox" name="file_del"> 파일삭제
+                <?php } else{ ?>
+                <label for="up_file">
+                    첨부파일 
+                </label>
+                <?php }; ?>
+                <br>
                 <input type="file" name="up_file" id="up_file">
             </p>
 

@@ -5,7 +5,7 @@ if($s_id != "admin"){
     echo "
         <script tyype=\"text/javascript\">
             alert(\"관리자 로그인이 필요합니다.\");
-            location.href = \"http://localhost/kurly_project/admin/login/login.php\";
+            location.href = \"http://shy624.dothome.co.kr/admin/login/login.php\";
         </script>
     ";
     exit;
@@ -21,6 +21,7 @@ if($s_id != "admin"){
     <style>
         body{font-size:20px};
         a{text-decoration:none; margin: 0 5px};
+        .nav {margin-left: 0;margin-right:0;}
 </style>
 </head>
 <body>
